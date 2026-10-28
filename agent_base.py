@@ -21,8 +21,8 @@ to dict.
 
 VERBOSE = False
 
-AUTHORS = 'Jane Smith and Laura Lee' # Override this in your agent file.
-STUDENT_IDS = ['jsmith99', 'llee2039']
+AUTHORS = 'Mahika Bagri and Jeppe Tofft' # Override this in your agent file.
+STUDENT_IDS = ['mahika13', 'jeppet']
 
 import time
 
