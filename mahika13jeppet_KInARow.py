@@ -14,8 +14,8 @@ from agent_base import KAgent
 from game_types import State, Game_Type
 import random
 
-AUTHORS = 'Jane Smith and Laura Lee' 
-STUDENT_IDS = ['jsmith99', 'llee2039'] # The first ID here should
+AUTHORS = 'Mahika Bagri and Jeppe Tofft' 
+STUDENT_IDS = ['mahika13', 'jeppet'] # The first ID here should
 # match the one in the file name, e.g., jsmith99_KInARow.py.
 
 import time # You'll probably need this to avoid losing a
@@ -27,11 +27,12 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
     # knows how to instantiate your agent class.
 
     def __init__(self, twin=False):
-        minion_names = ['Kevin', 'Bob']
+        minion_names = ['Kevin', 'Bob', 'Stuart', 'Dave', 'Jerry', 'Carl', 'Mel', 'Carl', 'Otto']
+        index = random.randint(0, len(minion_names) - 1)
         self.twin=twin
-        self.nickname = random.randint(0, len(minion_names))
+        self.nickname = minion_names[index]
         if twin: self.nickname += '2'
-        self.long_name = 'Templatus Skeletus'
+        self.long_name = self.nickname + ' the minion'
         if twin: self.long_name += ' II'
         self.persona = 'bland'
         self.voice_info = {'Chrome': 10, 'Firefox': 2, 'other': 0}
@@ -44,10 +45,9 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
         self.playing_mode = KAgent.DEMO
 
     def introduce(self):
-        intro = '\nMy name is Gru and today my minion Kevin will beat you.\n'+\
-            '"An instructor" made me.\n'+\
-            'Somebody please turn me into a real game-playing agent!\n'
-        if self.twin: intro += "By the way, I'm the TWIN.\n"
+        intro = '\nMy name is ' + 'Gru' if not self.twin else 'Dru' + ' and today my minion ' + self.nickname + ' will beat you.\n'+\
+            '"And then I, Mahika (mahika13) and Jeppe (jeppet) will take over the world!!!\n'
+        if self.twin: intro += "I am Gru's evil twin!\n"
         return intro
 
     # Receive and acknowledge information about the game from

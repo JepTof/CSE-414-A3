@@ -223,9 +223,9 @@ def test():
     # If using only 1, create 2 instances of it, one of
     # which is a "twin".
 
-    #import yourID_KInARow as h
+    import mahika13jeppet_KInARow as h_ours
     import RandomPlayer as h
-    px = h.OurAgent()
+    px = h_ours.OurAgent()
     po = h.OurAgent(twin=True)
     set_players(px, po)
     print("Players are set.")
