@@ -4,10 +4,10 @@
  "game": {
   "long_name": "Random-sized K-in-a-Row",
   "short_name": "Random",
-  "k": 4,
+  "k": 5,
   "n": 8,
-  "m": 6,
-  "turn_limit": 48,
+  "m": 7,
+  "turn_limit": 56,
   "initial_board": [
    [
     " ",
@@ -15,25 +15,11 @@
     " ",
     " ",
     " ",
-    " "
-   ],
-   [
-    " ",
-    " ",
-    " ",
-    " ",
     " ",
     " "
    ],
    [
     " ",
-    " ",
-    " ",
-    " ",
-    " ",
-    " "
-   ],
-   [
     " ",
     " ",
     " ",
@@ -47,13 +33,6 @@
     " ",
     " ",
     " ",
-    " "
-   ],
-   [
-    " ",
-    " ",
-    " ",
-    " ",
     " ",
     " "
    ],
@@ -63,9 +42,38 @@
     " ",
     " ",
     " ",
+    " ",
     " "
    ],
    [
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " "
+   ],
+   [
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " "
+   ],
+   [
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " "
+   ],
+   [
+    " ",
     " ",
     " ",
     " ",
@@ -98,7 +106,7 @@
    "type": "intro",
    "side": "X",
    "nickname": "Stuart",
-   "text": "\nMy name is Gru and today my minion Stuart will beat you.\n\"And then I, Mahika (mahika13) and Jeppe (jeppet) will take over the world!!!\n"
+   "text": "My name is Gru and today my minion Stuart will beat you.\nAnd then I, Mahika (mahika13), and Jeppe (jeppet) will take over the world!!!\n"
   },
   {
    "type": "intro",
@@ -130,17 +138,20 @@
      " ",
      " ",
      " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     " ",
      " ",
      " "
     ],
     [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
      " ",
      " ",
      " ",
@@ -154,13 +165,6 @@
      "X",
      " ",
      " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     " ",
      " ",
      " "
     ],
@@ -170,6 +174,16 @@
      " ",
      " ",
      " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
      " "
     ],
     [
@@ -178,9 +192,11 @@
      " ",
      " ",
      " ",
+     " ",
      " "
     ],
     [
+     " ",
      " ",
      " ",
      " ",
@@ -191,9 +207,9 @@
    ],
    "whose_move": "O",
    "stats": {
-    "seconds": 1.5086,
-    "alpha_beta_cutoffs_this_turn": 602,
-    "num_static_evals_this_turn": 17520,
+    "seconds": 1.7741,
+    "alpha_beta_cutoffs_this_turn": 755,
+    "num_static_evals_this_turn": 22398,
     "zobrist_table_num_entries_this_turn": 0,
     "zobrist_table_num_hits_this_turn": 0
    }
@@ -214,17 +230,20 @@
      " ",
      " ",
      " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     " ",
      " ",
      " "
     ],
     [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
      " ",
      " ",
      " ",
@@ -236,6 +255,7 @@
      " ",
      " ",
      "X",
+     " ",
      " ",
      " ",
      " "
@@ -246,49 +266,11 @@
      " ",
      "O",
      " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     " ",
      " ",
      " "
     ],
     [
      " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " "
-    ]
-   ],
-   "whose_move": "X",
-   "stats": {
-    "seconds": 0.8001
-   }
-  },
-  {
-   "type": "move",
-   "side": "X",
-   "nickname": "Stuart",
-   "move": [
-    4,
-    2
-   ],
-   "utterance": "I considered the available lines before choosing this move.",
-   "board": [
-    [
      " ",
      " ",
      " ",
@@ -302,133 +284,11 @@
      " ",
      " ",
      " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     " ",
      " ",
      " "
     ],
     [
      " ",
-     " ",
-     "X",
-     " ",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     "X",
-     "O",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " "
-    ]
-   ],
-   "whose_move": "O",
-   "stats": {
-    "seconds": 0.7816,
-    "alpha_beta_cutoffs_this_turn": 586,
-    "num_static_evals_this_turn": 14987,
-    "zobrist_table_num_entries_this_turn": 0,
-    "zobrist_table_num_hits_this_turn": 0
-   }
-  },
-  {
-   "type": "move",
-   "side": "O",
-   "nickname": "Line Strategist",
-   "move": [
-    3,
-    3
-   ],
-   "utterance": "I chose a move that strengthens my position.",
-   "board": [
-    [
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     "X",
-     "O",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     "X",
-     "O",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " "
-    ],
-    [
      " ",
      " ",
      " ",
@@ -448,7 +308,7 @@
    "nickname": "Stuart",
    "move": [
     2,
-    2
+    3
    ],
    "utterance": "I considered the available lines before choosing this move.",
    "board": [
@@ -458,17 +318,20 @@
      " ",
      " ",
      " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     " ",
      " ",
      " "
     ],
     [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
      " ",
      " ",
      "X",
@@ -480,19 +343,22 @@
      " ",
      " ",
      "X",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
      "O",
      " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     "X",
-     "O",
      " ",
      " "
     ],
     [
+     " ",
      " ",
      " ",
      " ",
@@ -506,9 +372,11 @@
      " ",
      " ",
      " ",
+     " ",
      " "
     ],
     [
+     " ",
      " ",
      " ",
      " ",
@@ -519,9 +387,9 @@
    ],
    "whose_move": "O",
    "stats": {
-    "seconds": 0.3158,
-    "alpha_beta_cutoffs_this_turn": 256,
-    "num_static_evals_this_turn": 6090,
+    "seconds": 1.2692,
+    "alpha_beta_cutoffs_this_turn": 757,
+    "num_static_evals_this_turn": 24436,
     "zobrist_table_num_entries_this_turn": 0,
     "zobrist_table_num_hits_this_turn": 0
    }
@@ -531,8 +399,8 @@
    "side": "O",
    "nickname": "Line Strategist",
    "move": [
-    3,
-    4
+    4,
+    1
    ],
    "utterance": "I chose a move that strengthens my position.",
    "board": [
@@ -542,17 +410,20 @@
      " ",
      " ",
      " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     " ",
      " ",
      " "
     ],
     [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
      " ",
      " ",
      "X",
@@ -564,23 +435,17 @@
      " ",
      " ",
      "X",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
      "O",
-     "O",
-     " "
-    ],
-    [
      " ",
-     " ",
-     "X",
      "O",
      " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     " ",
      " ",
      " "
     ],
@@ -590,9 +455,20 @@
      " ",
      " ",
      " ",
+     " ",
      " "
     ],
     [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
      " ",
      " ",
      " ",
@@ -603,7 +479,547 @@
    ],
    "whose_move": "X",
    "stats": {
-    "seconds": 0.0121
+    "seconds": 0.8001
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Stuart",
+   "move": [
+    3,
+    4
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     "X",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     " ",
+     "O",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.7624,
+    "alpha_beta_cutoffs_this_turn": 506,
+    "num_static_evals_this_turn": 14888,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Line Strategist",
+   "move": [
+    3,
+    1
+   ],
+   "utterance": "I chose a move that strengthens my position.",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     " ",
+     "X",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     " ",
+     "O",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.8001
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Stuart",
+   "move": [
+    1,
+    2
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     " ",
+     "X",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     " ",
+     "O",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.4151,
+    "alpha_beta_cutoffs_this_turn": 348,
+    "num_static_evals_this_turn": 8092,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Line Strategist",
+   "move": [
+    5,
+    1
+   ],
+   "utterance": "I chose a move that strengthens my position.",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     " ",
+     "X",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     " ",
+     "O",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.8001
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Stuart",
+   "move": [
+    4,
+    5
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     " ",
+     "X",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     " ",
+     "O",
+     " ",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.3695,
+    "alpha_beta_cutoffs_this_turn": 450,
+    "num_static_evals_this_turn": 6981,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Line Strategist",
+   "move": [
+    3,
+    3
+   ],
+   "utterance": "I chose a move that strengthens my position.",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     "X",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     " ",
+     "O",
+     " ",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.0149
    }
   },
   {
@@ -622,13 +1038,6 @@
      " ",
      " ",
      " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     " ",
      " ",
      " "
     ],
@@ -638,21 +1047,42 @@
      "X",
      " ",
      " ",
+     " ",
      " "
     ],
     [
+     " ",
      " ",
      " ",
      "X",
-     "O",
-     "O",
+     " ",
+     " ",
      " "
     ],
     [
      " ",
-     " ",
+     "O",
      "X",
      "O",
+     "X",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     " ",
+     "O",
+     " ",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     " ",
+     " ",
+     " ",
      " ",
      " "
     ],
@@ -662,17 +1092,11 @@
      " ",
      " ",
      " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     " ",
      " ",
      " "
     ],
     [
+     " ",
      " ",
      " ",
      " ",
@@ -683,9 +1107,9 @@
    ],
    "whose_move": "O",
    "stats": {
-    "seconds": 0.1008,
-    "alpha_beta_cutoffs_this_turn": 79,
-    "num_static_evals_this_turn": 1933,
+    "seconds": 0.1035,
+    "alpha_beta_cutoffs_this_turn": 87,
+    "num_static_evals_this_turn": 1982,
     "zobrist_table_num_entries_this_turn": 0,
     "zobrist_table_num_hits_this_turn": 0
    }
@@ -695,8 +1119,8 @@
    "side": "O",
    "nickname": "Line Strategist",
    "move": [
-    3,
-    1
+    4,
+    2
    ],
    "utterance": "I chose a move that strengthens my position.",
    "board": [
@@ -706,17 +1130,20 @@
      " ",
      " ",
      " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     " ",
      " ",
      " "
     ],
     [
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
      " ",
      " ",
      "X",
@@ -729,20 +1156,23 @@
      "O",
      "X",
      "O",
-     "O",
+     "X",
+     " ",
      " "
     ],
     [
      " ",
+     "O",
+     "O",
+     "O",
      " ",
      "X",
+     " "
+    ],
+    [
+     " ",
      "O",
      " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
      " ",
      " ",
      " ",
@@ -754,9 +1184,11 @@
      " ",
      " ",
      " ",
+     " ",
      " "
     ],
     [
+     " ",
      " ",
      " ",
      " ",
@@ -767,7 +1199,7 @@
    ],
    "whose_move": "X",
    "stats": {
-    "seconds": 0.0124
+    "seconds": 0.0144
    }
   },
   {
@@ -786,17 +1218,20 @@
      " ",
      " ",
      " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     " ",
      " ",
      " "
     ],
     [
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
      " ",
      " ",
      "X",
@@ -809,20 +1244,23 @@
      "O",
      "X",
      "O",
-     "O",
+     "X",
+     " ",
      " "
     ],
     [
      " ",
+     "O",
+     "O",
+     "O",
      " ",
      "X",
+     " "
+    ],
+    [
+     " ",
      "O",
      " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
      " ",
      " ",
      " ",
@@ -834,9 +1272,11 @@
      " ",
      " ",
      " ",
+     " ",
      " "
     ],
     [
+     " ",
      " ",
      " ",
      " ",
@@ -847,180 +1287,16 @@
    ],
    "whose_move": "O",
    "stats": {
-    "seconds": 0.0913,
-    "alpha_beta_cutoffs_this_turn": 75,
-    "num_static_evals_this_turn": 1723,
-    "zobrist_table_num_entries_this_turn": 0,
-    "zobrist_table_num_hits_this_turn": 0
-   }
-  },
-  {
-   "type": "move",
-   "side": "O",
-   "nickname": "Line Strategist",
-   "move": [
-    5,
-    3
-   ],
-   "utterance": "I chose a move that strengthens my position.",
-   "board": [
-    [
-     "X",
-     "X",
-     " ",
-     " ",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     "X",
-     " ",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     "O",
-     "X",
-     "O",
-     "O",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     "X",
-     "O",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     "O",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " "
-    ]
-   ],
-   "whose_move": "X",
-   "stats": {
-    "seconds": 0.011
-   }
-  },
-  {
-   "type": "move",
-   "side": "X",
-   "nickname": "Stuart",
-   "move": [
-    1,
-    2
-   ],
-   "utterance": "I considered the available lines before choosing this move.",
-   "board": [
-    [
-     "X",
-     "X",
-     " ",
-     " ",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     "X",
-     " ",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     "X",
-     " ",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     "O",
-     "X",
-     "O",
-     "O",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     "X",
-     "O",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     "O",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " "
-    ]
-   ],
-   "whose_move": "O",
-   "stats": {
-    "seconds": 0.0885,
-    "alpha_beta_cutoffs_this_turn": 119,
-    "num_static_evals_this_turn": 1637,
+    "seconds": 0.09,
+    "alpha_beta_cutoffs_this_turn": 42,
+    "num_static_evals_this_turn": 1766,
     "zobrist_table_num_entries_this_turn": 0,
     "zobrist_table_num_hits_this_turn": 0
    }
   },
   {
    "type": "result",
-   "text": "Win for X at [1][2] in direction (1, 0)",
+   "text": "Win for X at [0][2] in direction (1, 1)",
    "winner": "X"
   }
  ]

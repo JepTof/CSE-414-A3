@@ -208,6 +208,9 @@ class OurAgent(KAgent):
             return list(own_wins)
 
         opponent_threats = self._threat_squares(board, self._other(player))
+        if len(opponent_threats) == 1:
+            return list(opponent_threats)
+
         candidates = set(self._candidate_squares(board))
         candidates.update(opponent_threats)
         if not candidates:

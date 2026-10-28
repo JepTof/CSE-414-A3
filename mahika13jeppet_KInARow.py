@@ -204,7 +204,7 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
                           1 if open_ends == 1 else 0.5)
 
         if x_count:
-            score = tracker['weights'][x_count] * end_multiplier
+            score = tracker['weights'][x_count] * end_multiplier * 1.2
         elif o_count:
             score = -tracker['weights'][o_count] * end_multiplier
         else:

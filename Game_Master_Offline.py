@@ -215,9 +215,9 @@ def test():
     import random
     from game_types import Game_Type
 
-    rows = random.randint(6, 8)
-    columns = random.randint(6, 8)
-    k = random.randint(4, min(5, rows, columns))
+    rows = random.randint(3, 10)
+    columns = random.randint(3, 10)
+    k = random.randint(3, min(rows, columns))
 
     board = [[' ' for _ in range(columns)] for _ in range(rows)]
     random_game = Game_Type(
@@ -244,12 +244,12 @@ def test():
     
 
     import mahika13jeppet_KInARow as h_ours
-    import ai_KInARow as h_ai
+    import mahika13jeppet_KInARow_twin as h_twin
     if random.choice((True, False)):
         px = h_ours.OurAgent()
-        po = h_ai.OurAgent()
+        po = h_twin.OurAgent(twin=True)
     else:
-        px = h_ai.OurAgent()
+        px = h_twin.OurAgent(twin=True)
         po = h_ours.OurAgent()
     set_players(px, po)
     print(f"X: {px.nickname}; O: {po.nickname}")
