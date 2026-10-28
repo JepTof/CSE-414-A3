@@ -1,8 +1,6 @@
 '''
-<yourID>_KInARow.py
-Authors: <your name(s) here, lastname first and partners separated by ";">
-  Example:  
-    Authors: Smith, Jane; Lee, Laura
+mahika13jeppet_KInARow.py
+Authors: Bagri, Mahika; Tofft, Jeppe
 
 An agent for playing "K-in-a-Row with Forbidden Squares" and related games.
 
@@ -14,6 +12,7 @@ TO PROVIDE A GOOD STRUCTURE FOR YOUR IMPLEMENTATION.
 
 from agent_base import KAgent
 from game_types import State, Game_Type
+import random
 
 AUTHORS = 'Jane Smith and Laura Lee' 
 STUDENT_IDS = ['jsmith99', 'llee2039'] # The first ID here should
@@ -28,8 +27,9 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
     # knows how to instantiate your agent class.
 
     def __init__(self, twin=False):
+        minion_names = ['Kevin', 'Bob']
         self.twin=twin
-        self.nickname = 'Nic'
+        self.nickname = random.randint(0, len(minion_names))
         if twin: self.nickname += '2'
         self.long_name = 'Templatus Skeletus'
         if twin: self.long_name += ' II'
@@ -44,7 +44,7 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
         self.playing_mode = KAgent.DEMO
 
     def introduce(self):
-        intro = '\nMy name is Templatus Skeletus.\n'+\
+        intro = '\nMy name is Gru and today my minion Kevin will beat you.\n'+\
             '"An instructor" made me.\n'+\
             'Somebody please turn me into a real game-playing agent!\n'
         if self.twin: intro += "By the way, I'm the TWIN.\n"
