@@ -52,6 +52,8 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
         self._zobrist_turn_key = 0
         self._transposition_table = None
         self.current_game_type = None
+        self._root_search_depth = 0
+        self._search_deadline = None
         self.playing_mode = KAgent.DEMO
         self.who = 'Gru' if not self.twin else 'Dru'
 
@@ -110,6 +112,7 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
         affected = [[[] for _ in range(columns)] for _ in range(rows)]
 
         for row in range(rows):
+            self._check_search_time()
             for column in range(columns):
                 for row_step, column_step in directions:
                     end_row = row + (k - 1) * row_step
@@ -137,6 +140,7 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
             'rows': rows,
             'columns': columns,
             'k': k,
+            'check_time': self._check_search_time,
             'weights': weights,
             'windows': windows,
             'affected': affected,
@@ -160,7 +164,8 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
             self._apply_window_record(tracker, record, 1)
         return tracker
 
-    def _evaluate_window(self, tracker, window):
+    @staticmethod
+    def _evaluate_window(tracker, window):
         row, column, row_step, column_step, end_row, end_column = window
         board = tracker['board']
         k = tracker['k']
@@ -248,6 +253,83 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
             self._apply_window_record(tracker, record, 1)
 
     @staticmethod
+    def _count_x_fork_moves(tracker):
+        board = tracker['board']
+        rows = tracker['rows']
+        columns = tracker['columns']
+        threats = tracker['threats']['X']
+        if tracker['k'] < 2:
+            return 0
+
+        threats_created = {}
+        k = tracker['k']
+        for row, column, row_step, column_step, _, _ in tracker['windows']:
+            tracker['check_time']()
+            x_count = 0
+            empty_squares = []
+            blocked = False
+            for offset in range(k):
+                r = row + offset * row_step
+                c = column + offset * column_step
+                cell = board[r][c]
+                if cell == 'X':
+                    x_count += 1
+                elif cell == ' ':
+                    empty_squares.append((r, c))
+                else:
+                    blocked = True
+                    break
+
+            if not blocked and x_count == k - 2 and len(empty_squares) == 2:
+                first, second = empty_squares
+                threats_created.setdefault(first, set()).add(second)
+                threats_created.setdefault(second, set()).add(first)
+
+        fork_count = 0
+        for row in range(rows):
+            tracker['check_time']()
+            for column in range(columns):
+                move = (row, column)
+                if board[row][column] != ' ':
+                    continue
+                winning_squares = set(threats)
+                winning_squares.discard(move)
+                winning_squares.update(threats_created.get(move, ()))
+                if len(winning_squares) > 1:
+                    fork_count += 1
+
+        return fork_count
+
+    @staticmethod
+    def _count_x_two_move_windows(tracker):
+        board = tracker['board']
+        k = tracker['k']
+        count = 0
+        if k < 2:
+            return count
+
+        for row, column, row_step, column_step, _, _ in tracker['windows']:
+            tracker['check_time']()
+            x_count = 0
+            empty_count = 0
+            blocked = False
+            for offset in range(k):
+                r = row + offset * row_step
+                c = column + offset * column_step
+                cell = board[r][c]
+                if cell == 'X':
+                    x_count += 1
+                elif cell == ' ':
+                    empty_count += 1
+                else:
+                    blocked = True
+                    break
+            if not blocked and x_count == k - 2 and empty_count == 2:
+                count += 1
+
+        return count
+
+    @staticmethod
     def _tracked_score(tracker, whose_move):
         wins = tracker['wins']
         if wins['X'] and not wins['O']:
@@ -262,11 +344,29 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
         if threats[whose_move]:
             return 900_000 if whose_move == 'X' else -900_000
         if len(threats[opponent]) > 1:
-            return -850_000 if opponent == 'X' else 850_000
+            return 850_000 if opponent == 'X' else -850_000
 
         score = tracker['score']
         if threats[opponent]:
             score += 10_000 if opponent == 'X' else -10_000
+        x_threat_squares = len(threats['X'])
+        if x_threat_squares:
+            score += min(x_threat_squares, 2) * 200_000
+        score += min(OurAgent._count_x_fork_moves(tracker), 8) * 100_000
+        score += min(OurAgent._count_x_two_move_windows(tracker), 12) * 5_000
+
+        center_row = (tracker['rows'] - 1) / 2
+        center_column = (tracker['columns'] - 1) / 2
+        center_scale = max(1, tracker['rows'] + tracker['columns'])
+        for row, line in enumerate(tracker['board']):
+            tracker['check_time']()
+            for column, cell in enumerate(line):
+                if cell not in ('X', 'O'):
+                    continue
+                centrality = 1 - (
+                    abs(row - center_row) + abs(column - center_column)
+                ) / center_scale
+                score += 25 * centrality * (1 if cell == 'X' else -1)
         return score
    
     # The core of your agent's ability should be implemented here:             
@@ -274,12 +374,14 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
                   use_alpha_beta=True,
                   use_zobrist_hashing=True, max_ply=3,
                   special_static_eval_fn=None):
+        search_started_at = time.monotonic()
         self.alpha_beta_cutoffs_this_turn = 0
         self.num_static_evals_this_turn = 0
         self.zobrist_table_num_entries_this_turn = 0
         self.zobrist_table_num_hits_this_turn = 0
         self.zobrist_num_useful_hits_for_minimax = 0
         self.zobrist_num_useful_hits_for_ordering = 0
+        self._root_search_depth = max_ply
         if use_zobrist_hashing:
             board = current_state.board
             rows = len(board)
@@ -296,13 +398,51 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
             self._zobrist_turn_key = 0
             self._transposition_table = None
         self.playing = current_state.whose_move
-        result = self.minimax(
-            current_state,
-            max_ply,
-            pruning=use_alpha_beta,
-            special_static_eval_fn=special_static_eval_fn,
+        legal_moves = [
+            (row, column)
+            for row, line in enumerate(current_state.board)
+            for column, cell in enumerate(line)
+            if cell == ' '
+        ]
+        move = None
+        new_state = State(old=current_state)
+        if legal_moves:
+            center_row = (len(current_state.board) - 1) / 2
+            center_column = (len(current_state.board[0]) - 1) / 2
+            move = min(
+                legal_moves,
+                key=lambda square: abs(square[0] - center_row)
+                + abs(square[1] - center_column),
+            )
+            new_state.board[move[0]][move[1]] = current_state.whose_move
+            new_state.change_turn()
+
+        self._search_deadline = (
+            search_started_at + max(0.0, time_limit) * 0.9
         )
-        move, new_state = result[1], result[2]
+        if special_static_eval_fn is not None or max_ply <= 0:
+            depths = (max_ply,)
+        else:
+            depths = range(1, max_ply + 1)
+        try:
+            for depth in depths:
+                self._root_search_depth = depth
+                try:
+                    result = self.minimax(
+                        current_state,
+                        depth,
+                        pruning=use_alpha_beta,
+                        special_static_eval_fn=special_static_eval_fn,
+                    )
+                except TimeoutError:
+                    break
+                if time.monotonic() >= self._search_deadline:
+                    break
+                move, new_state = result[1], result[2]
+                if move is None:
+                    break
+        finally:
+            self._search_deadline = None
         new_remark = "I considered the available lines before choosing this move."
 
         if self.playing_mode == KAgent.AUTOGRADER:
@@ -326,6 +466,7 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
             beta=None,
             special_static_eval_fn=None,
             _tracker=None):
+        self._check_search_time()
         if _tracker is None:
             state = State(old=state)
             game_type = self.current_game_type
@@ -398,10 +539,16 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
         best_state = None
         player = state.whose_move
 
-        if (self.playing_mode != KAgent.AUTOGRADER
-                and (self._transposition_table is not None or self.twin)):
+        if self.playing_mode != KAgent.AUTOGRADER:
             ordered_moves = self._order_moves(
-                legal_moves, _tracker, player, preferred_move
+                legal_moves,
+                _tracker,
+                player,
+                preferred_move,
+                defensive_root_ordering=(
+                    depth_remaining == self._root_search_depth
+                    and self.playing == 'O'
+                ),
             )
             if preferred_move in legal_moves:
                 self.zobrist_num_useful_hits_for_ordering += 1
@@ -409,6 +556,7 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
             ordered_moves = legal_moves
 
         for row, column in ordered_moves:
+            self._check_search_time()
             self._update_tracked_move(_tracker, row, column, player)
             state.change_turn()
             successor_state = State(old=state)
@@ -445,11 +593,54 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
         )
         return [best_value, best_move, best_state or State(old=state)]
 
-    def _order_moves(self, legal_moves, tracker, player, preferred_move):
+    def _check_search_time(self):
+        if (self._search_deadline is not None
+                and time.monotonic() >= self._search_deadline):
+            raise TimeoutError("Search reached its move time budget.")
+
+    def _order_moves(
+            self, legal_moves, tracker, player, preferred_move,
+            defensive_root_ordering=False):
         opponent = 'O' if player == 'X' else 'X'
         center_row = (tracker['rows'] - 1) / 2
         center_column = (tracker['columns'] - 1) / 2
         board = tracker['board']
+        defensive_risks = {}
+        if defensive_root_ordering and player == 'O':
+            for row, column in legal_moves:
+                self._check_search_time()
+                self._update_tracked_move(tracker, row, column, 'O')
+                fork_moves = self._count_x_fork_moves(tracker)
+                two_move_windows = self._count_x_two_move_windows(tracker)
+                worst_x_winning_squares = 0
+                x_fork_replies = 0
+                x_winning_replies = 0
+                for x_row in range(tracker['rows']):
+                    for x_column in range(tracker['columns']):
+                        self._check_search_time()
+                        if board[x_row][x_column] != ' ':
+                            continue
+                        self._update_tracked_move(
+                            tracker, x_row, x_column, 'X'
+                        )
+                        winning_squares = len(tracker['threats']['X'])
+                        worst_x_winning_squares = max(
+                            worst_x_winning_squares, winning_squares
+                        )
+                        x_fork_replies += winning_squares > 1
+                        x_winning_replies += tracker['wins']['X'] > 0
+                        self._update_tracked_move(
+                            tracker, x_row, x_column, ' '
+                        )
+                defensive_risks[(row, column)] = (
+                    len(tracker['threats']['X']),
+                    x_winning_replies,
+                    worst_x_winning_squares,
+                    x_fork_replies,
+                    fork_moves,
+                    two_move_windows,
+                )
+                self._update_tracked_move(tracker, row, column, ' ')
 
         def move_score(move):
             row, column = move
@@ -461,6 +652,7 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
                 0
             )
             center_score = -abs(row - center_row) - abs(column - center_column)
+            defensive_center_score = center_score if player == 'O' else 0
             neighbour_count = 0
             neighbour_count = sum(
                 1
@@ -477,7 +669,9 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
             return (
                 tactical_priority,
                 winning_threats if tactical_priority == 2 else blocked_threats,
+                tuple(-risk for risk in defensive_risks.get(move, ())),
                 move == preferred_move,
+                defensive_center_score,
                 neighbour_count,
                 center_score,
             )
@@ -524,7 +718,9 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
 
         if game_type.k <= 0 or not state.board or not state.board[0]:
             return 0
-        return self._tracked_score(self._build_eval_tracker(state, game_type), state.whose_move)
+        return self._tracked_score(
+            self._build_eval_tracker(state, game_type), state.whose_move
+        )
  
 # OPTIONAL THINGS TO KEEP TRACK OF:
 
