@@ -395,8 +395,8 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
         best_state = None
         player = state.whose_move
 
-        if (self._transposition_table is not None
-                and self.playing_mode != KAgent.AUTOGRADER):
+        if (self.playing_mode != KAgent.AUTOGRADER
+                and (self._transposition_table is not None or self.twin)):
             ordered_moves = self._order_moves(
                 legal_moves, _tracker, player, preferred_move
             )
@@ -446,6 +446,7 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
         opponent = 'O' if player == 'X' else 'X'
         center_row = (tracker['rows'] - 1) / 2
         center_column = (tracker['columns'] - 1) / 2
+        board = tracker['board']
 
         def move_score(move):
             row, column = move
@@ -457,10 +458,25 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
                 0
             )
             center_score = -abs(row - center_row) - abs(column - center_column)
+            neighbour_count = 0
+            if self.twin:
+                neighbour_count = sum(
+                    1
+                    for neighbour_row in range(
+                        max(0, row - 1), min(len(board), row + 2)
+                    )
+                    for neighbour_column in range(
+                        max(0, column - 1),
+                        min(len(board[neighbour_row]), column + 2),
+                    )
+                    if (neighbour_row, neighbour_column) != move
+                    and board[neighbour_row][neighbour_column] in ('X', 'O')
+                )
             return (
                 tactical_priority,
                 winning_threats if tactical_priority == 2 else blocked_threats,
                 move == preferred_move,
+                neighbour_count,
                 center_score,
             )
 
