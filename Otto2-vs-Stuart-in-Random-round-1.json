@@ -1,0 +1,11692 @@
+{
+ "format": "kiar-transcript/1",
+ "round": 1,
+ "game": {
+  "long_name": "Random-sized K-in-a-Row",
+  "short_name": "Random",
+  "k": 8,
+  "n": 9,
+  "m": 10,
+  "turn_limit": 90,
+  "initial_board": [
+   [
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " "
+   ],
+   [
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " "
+   ],
+   [
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " "
+   ],
+   [
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " "
+   ],
+   [
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " "
+   ],
+   [
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " "
+   ],
+   [
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " "
+   ],
+   [
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " "
+   ],
+   [
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " "
+   ]
+  ],
+  "first_move": "X"
+ },
+ "players": {
+  "X": {
+   "nickname": "Otto2",
+   "long_name": "Otto2 the minion II",
+   "persona": "bland",
+   "voice_info": {
+    "Chrome": 10,
+    "Firefox": 2,
+    "other": 0
+   }
+  },
+  "O": {
+   "nickname": "Stuart",
+   "long_name": "Stuart the minion",
+   "persona": "bland",
+   "voice_info": {
+    "Chrome": 10,
+    "Firefox": 2,
+    "other": 0
+   }
+  }
+ },
+ "events": [
+  {
+   "type": "intro",
+   "side": "X",
+   "nickname": "Otto2",
+   "text": "My name is Dru and today my minion Otto2 will beat you.\nAnd then I, Mahika (mahika13), and Jeppe (jeppet) will take over the world!!!\nI am Gru's evil twin!\n"
+  },
+  {
+   "type": "intro",
+   "side": "O",
+   "nickname": "Stuart",
+   "text": "My name is Gru and today my minion Stuart will beat you.\nAnd then I, Mahika (mahika13), and Jeppe (jeppet) will take over the world!!!\n"
+  },
+  {
+   "type": "gm",
+   "text": "We're playing Random-sized K-in-a-Row."
+  },
+  {
+   "type": "gm",
+   "text": "Let's Play!"
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Otto2",
+   "move": [
+    1,
+    2
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 10.232,
+    "alpha_beta_cutoffs_this_turn": 2751,
+    "num_static_evals_this_turn": 186445,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Stuart",
+   "move": [
+    3,
+    5
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 5.9252,
+    "alpha_beta_cutoffs_this_turn": 1249,
+    "num_static_evals_this_turn": 65249,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Otto2",
+   "move": [
+    3,
+    2
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 3.6257,
+    "alpha_beta_cutoffs_this_turn": 1770,
+    "num_static_evals_this_turn": 70639,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Stuart",
+   "move": [
+    2,
+    2
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 4.4211,
+    "alpha_beta_cutoffs_this_turn": 1011,
+    "num_static_evals_this_turn": 49590,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Otto2",
+   "move": [
+    2,
+    3
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 2.3896,
+    "alpha_beta_cutoffs_this_turn": 1385,
+    "num_static_evals_this_turn": 47206,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Stuart",
+   "move": [
+    4,
+    4
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 3.8201,
+    "alpha_beta_cutoffs_this_turn": 1072,
+    "num_static_evals_this_turn": 42925,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Otto2",
+   "move": [
+    1,
+    3
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 1.0083,
+    "alpha_beta_cutoffs_this_turn": 784,
+    "num_static_evals_this_turn": 19752,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Stuart",
+   "move": [
+    4,
+    5
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 2.1864,
+    "alpha_beta_cutoffs_this_turn": 763,
+    "num_static_evals_this_turn": 24025,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Otto2",
+   "move": [
+    4,
+    3
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 1.6172,
+    "alpha_beta_cutoffs_this_turn": 1103,
+    "num_static_evals_this_turn": 27809,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Stuart",
+   "move": [
+    5,
+    5
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 2.6087,
+    "alpha_beta_cutoffs_this_turn": 917,
+    "num_static_evals_this_turn": 26570,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Otto2",
+   "move": [
+    1,
+    5
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     "X",
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 1.4695,
+    "alpha_beta_cutoffs_this_turn": 715,
+    "num_static_evals_this_turn": 27777,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Stuart",
+   "move": [
+    1,
+    7
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     "X",
+     " ",
+     "X",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 1.1888,
+    "alpha_beta_cutoffs_this_turn": 642,
+    "num_static_evals_this_turn": 12216,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Otto2",
+   "move": [
+    6,
+    6
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     "X",
+     " ",
+     "X",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 1.975,
+    "alpha_beta_cutoffs_this_turn": 2339,
+    "num_static_evals_this_turn": 40417,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Stuart",
+   "move": [
+    5,
+    3
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     "X",
+     " ",
+     "X",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 5.2195,
+    "alpha_beta_cutoffs_this_turn": 1772,
+    "num_static_evals_this_turn": 60787,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Otto2",
+   "move": [
+    5,
+    6
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     "X",
+     " ",
+     "X",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 3.7946,
+    "alpha_beta_cutoffs_this_turn": 1611,
+    "num_static_evals_this_turn": 82128,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Stuart",
+   "move": [
+    5,
+    4
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     "X",
+     " ",
+     "X",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 4.062,
+    "alpha_beta_cutoffs_this_turn": 1747,
+    "num_static_evals_this_turn": 47787,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Otto2",
+   "move": [
+    7,
+    1
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     "X",
+     " ",
+     "X",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 3.2816,
+    "alpha_beta_cutoffs_this_turn": 1259,
+    "num_static_evals_this_turn": 56390,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Stuart",
+   "move": [
+    7,
+    6
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     "X",
+     " ",
+     "X",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 4.0884,
+    "alpha_beta_cutoffs_this_turn": 1236,
+    "num_static_evals_this_turn": 43425,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Otto2",
+   "move": [
+    6,
+    1
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     "X",
+     " ",
+     "X",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 5.3868,
+    "alpha_beta_cutoffs_this_turn": 2436,
+    "num_static_evals_this_turn": 105961,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Stuart",
+   "move": [
+    8,
+    1
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     "X",
+     " ",
+     "X",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 2.1096,
+    "alpha_beta_cutoffs_this_turn": 640,
+    "num_static_evals_this_turn": 22669,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Otto2",
+   "move": [
+    3,
+    4
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     "X",
+     " ",
+     "X",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 7.1569,
+    "alpha_beta_cutoffs_this_turn": 3083,
+    "num_static_evals_this_turn": 144554,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Stuart",
+   "move": [
+    2,
+    7
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     "X",
+     " ",
+     "X",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     "X",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 3.7526,
+    "alpha_beta_cutoffs_this_turn": 1329,
+    "num_static_evals_this_turn": 39761,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Otto2",
+   "move": [
+    6,
+    3
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     "X",
+     " ",
+     "X",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     "X",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 2.2971,
+    "alpha_beta_cutoffs_this_turn": 926,
+    "num_static_evals_this_turn": 47621,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Stuart",
+   "move": [
+    0,
+    7
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     "X",
+     " ",
+     "X",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     "X",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 3.0684,
+    "alpha_beta_cutoffs_this_turn": 637,
+    "num_static_evals_this_turn": 35225,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Otto2",
+   "move": [
+    0,
+    1
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     "X",
+     " ",
+     "X",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     "X",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 6.4735,
+    "alpha_beta_cutoffs_this_turn": 2649,
+    "num_static_evals_this_turn": 136090,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Stuart",
+   "move": [
+    1,
+    1
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "X",
+     " ",
+     "X",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     "X",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 5.8556,
+    "alpha_beta_cutoffs_this_turn": 1580,
+    "num_static_evals_this_turn": 68591,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Otto2",
+   "move": [
+    3,
+    7
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "X",
+     " ",
+     "X",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     "X",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     "X",
+     "O",
+     " ",
+     "X",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 5.7765,
+    "alpha_beta_cutoffs_this_turn": 2443,
+    "num_static_evals_this_turn": 121942,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Stuart",
+   "move": [
+    6,
+    2
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "X",
+     " ",
+     "X",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     "X",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     "X",
+     "O",
+     " ",
+     "X",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 6.2382,
+    "alpha_beta_cutoffs_this_turn": 1808,
+    "num_static_evals_this_turn": 84662,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Otto2",
+   "move": [
+    8,
+    8
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "X",
+     " ",
+     "X",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     "X",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     "X",
+     "O",
+     " ",
+     "X",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.7052,
+    "alpha_beta_cutoffs_this_turn": 491,
+    "num_static_evals_this_turn": 17336,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Stuart",
+   "move": [
+    0,
+    9
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "X",
+     " ",
+     "X",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     "X",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     "X",
+     "O",
+     " ",
+     "X",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 3.3354,
+    "alpha_beta_cutoffs_this_turn": 992,
+    "num_static_evals_this_turn": 45137,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Otto2",
+   "move": [
+    8,
+    2
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "X",
+     " ",
+     "X",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     "X",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     "X",
+     "O",
+     " ",
+     "X",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.7549,
+    "alpha_beta_cutoffs_this_turn": 683,
+    "num_static_evals_this_turn": 18474,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Stuart",
+   "move": [
+    8,
+    3
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "X",
+     " ",
+     "X",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     "X",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     "X",
+     "O",
+     " ",
+     "X",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 1.9994,
+    "alpha_beta_cutoffs_this_turn": 1316,
+    "num_static_evals_this_turn": 26681,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Otto2",
+   "move": [
+    1,
+    0
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     " ",
+     "X",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     "X",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     "X",
+     "O",
+     " ",
+     "X",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.4657,
+    "alpha_beta_cutoffs_this_turn": 398,
+    "num_static_evals_this_turn": 11493,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Stuart",
+   "move": [
+    7,
+    9
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     " ",
+     "X",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     "X",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     "X",
+     "O",
+     " ",
+     "X",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.8614,
+    "alpha_beta_cutoffs_this_turn": 498,
+    "num_static_evals_this_turn": 11575,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Otto2",
+   "move": [
+    1,
+    9
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     " ",
+     "X",
+     " ",
+     "O",
+     " ",
+     "X"
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     "X",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     "X",
+     "O",
+     " ",
+     "X",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.6217,
+    "alpha_beta_cutoffs_this_turn": 760,
+    "num_static_evals_this_turn": 15291,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Stuart",
+   "move": [
+    0,
+    8
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     " ",
+     "X",
+     " ",
+     "O",
+     " ",
+     "X"
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     "X",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     "X",
+     "O",
+     " ",
+     "X",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 1.2957,
+    "alpha_beta_cutoffs_this_turn": 464,
+    "num_static_evals_this_turn": 16591,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Otto2",
+   "move": [
+    7,
+    8
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     " ",
+     "X",
+     " ",
+     "O",
+     " ",
+     "X"
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     "X",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     "X",
+     "O",
+     " ",
+     "X",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.3075,
+    "alpha_beta_cutoffs_this_turn": 514,
+    "num_static_evals_this_turn": 7533,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Stuart",
+   "move": [
+    1,
+    8
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     " ",
+     "X",
+     " ",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     "X",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     "X",
+     "O",
+     " ",
+     "X",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.3968,
+    "alpha_beta_cutoffs_this_turn": 152,
+    "num_static_evals_this_turn": 5508,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Otto2",
+   "move": [
+    0,
+    0
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     " ",
+     "X",
+     " ",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     "X",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     "X",
+     "O",
+     " ",
+     "X",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.2447,
+    "alpha_beta_cutoffs_this_turn": 456,
+    "num_static_evals_this_turn": 5913,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Stuart",
+   "move": [
+    0,
+    2
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     " ",
+     "X",
+     " ",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     "X",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     "X",
+     "O",
+     " ",
+     "X",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.1832,
+    "alpha_beta_cutoffs_this_turn": 99,
+    "num_static_evals_this_turn": 2563,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Otto2",
+   "move": [
+    0,
+    3
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     " ",
+     "X",
+     " ",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     "X",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     "X",
+     "O",
+     " ",
+     "X",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.2077,
+    "alpha_beta_cutoffs_this_turn": 342,
+    "num_static_evals_this_turn": 5157,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Stuart",
+   "move": [
+    0,
+    4
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     " ",
+     "X",
+     " ",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     "X",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     "X",
+     "O",
+     " ",
+     "X",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.1817,
+    "alpha_beta_cutoffs_this_turn": 95,
+    "num_static_evals_this_turn": 2541,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Otto2",
+   "move": [
+    0,
+    5
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     " ",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     " ",
+     "X",
+     " ",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     "X",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     "X",
+     "O",
+     " ",
+     "X",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.1986,
+    "alpha_beta_cutoffs_this_turn": 236,
+    "num_static_evals_this_turn": 5089,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Stuart",
+   "move": [
+    0,
+    6
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     " ",
+     "X",
+     " ",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     "X",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     "X",
+     "O",
+     " ",
+     "X",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.1599,
+    "alpha_beta_cutoffs_this_turn": 91,
+    "num_static_evals_this_turn": 2255,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Otto2",
+   "move": [
+    1,
+    4
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     "X",
+     "X",
+     " ",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     "X",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     "X",
+     "O",
+     " ",
+     "X",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.166,
+    "alpha_beta_cutoffs_this_turn": 138,
+    "num_static_evals_this_turn": 4233,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Stuart",
+   "move": [
+    1,
+    6
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     "X",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     "X",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     "X",
+     "O",
+     " ",
+     "X",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.1395,
+    "alpha_beta_cutoffs_this_turn": 87,
+    "num_static_evals_this_turn": 1978,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Otto2",
+   "move": [
+    2,
+    0
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     "X",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "X",
+     " ",
+     "O",
+     "X",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     "X",
+     "O",
+     " ",
+     "X",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.0778,
+    "alpha_beta_cutoffs_this_turn": 84,
+    "num_static_evals_this_turn": 1956,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Stuart",
+   "move": [
+    2,
+    1
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     "X",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     "X",
+     "O",
+     " ",
+     "X",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.1409,
+    "alpha_beta_cutoffs_this_turn": 83,
+    "num_static_evals_this_turn": 2010,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Otto2",
+   "move": [
+    2,
+    4
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     "X",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X",
+     " ",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     "X",
+     "O",
+     " ",
+     "X",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.1709,
+    "alpha_beta_cutoffs_this_turn": 245,
+    "num_static_evals_this_turn": 4266,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Stuart",
+   "move": [
+    2,
+    5
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     "X",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X",
+     "O",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     "X",
+     "O",
+     " ",
+     "X",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.1246,
+    "alpha_beta_cutoffs_this_turn": 79,
+    "num_static_evals_this_turn": 1758,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Otto2",
+   "move": [
+    2,
+    6
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     "X",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     "X",
+     "O",
+     " ",
+     "X",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.1319,
+    "alpha_beta_cutoffs_this_turn": 157,
+    "num_static_evals_this_turn": 3354,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Stuart",
+   "move": [
+    2,
+    8
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     "X",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     "X",
+     "O",
+     " ",
+     "X",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.1091,
+    "alpha_beta_cutoffs_this_turn": 75,
+    "num_static_evals_this_turn": 1522,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Otto2",
+   "move": [
+    2,
+    9
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     "X",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     "X",
+     "O",
+     " ",
+     "X",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.107,
+    "alpha_beta_cutoffs_this_turn": 78,
+    "num_static_evals_this_turn": 2766,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Stuart",
+   "move": [
+    3,
+    0
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     "X",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     " ",
+     "X",
+     " ",
+     "X",
+     "O",
+     " ",
+     "X",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.0953,
+    "alpha_beta_cutoffs_this_turn": 71,
+    "num_static_evals_this_turn": 1330,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Otto2",
+   "move": [
+    3,
+    1
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     "X",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "X",
+     " ",
+     "X",
+     "O",
+     " ",
+     "X",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.0495,
+    "alpha_beta_cutoffs_this_turn": 69,
+    "num_static_evals_this_turn": 1258,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Stuart",
+   "move": [
+    3,
+    3
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     "X",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     " ",
+     "X",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.0834,
+    "alpha_beta_cutoffs_this_turn": 67,
+    "num_static_evals_this_turn": 1188,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Otto2",
+   "move": [
+    3,
+    6
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     "X",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.0466,
+    "alpha_beta_cutoffs_this_turn": 65,
+    "num_static_evals_this_turn": 1120,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Stuart",
+   "move": [
+    3,
+    8
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     "X",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     "O",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.0799,
+    "alpha_beta_cutoffs_this_turn": 63,
+    "num_static_evals_this_turn": 1054,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Otto2",
+   "move": [
+    3,
+    9
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     "X",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X"
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.0439,
+    "alpha_beta_cutoffs_this_turn": 61,
+    "num_static_evals_this_turn": 990,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Stuart",
+   "move": [
+    4,
+    0
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     "X",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     " ",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.0699,
+    "alpha_beta_cutoffs_this_turn": 59,
+    "num_static_evals_this_turn": 928,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Otto2",
+   "move": [
+    4,
+    1
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     "X",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     " ",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.0373,
+    "alpha_beta_cutoffs_this_turn": 57,
+    "num_static_evals_this_turn": 868,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Stuart",
+   "move": [
+    4,
+    2
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     "X",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.0582,
+    "alpha_beta_cutoffs_this_turn": 55,
+    "num_static_evals_this_turn": 810,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Otto2",
+   "move": [
+    4,
+    6
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     "X",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.0317,
+    "alpha_beta_cutoffs_this_turn": 53,
+    "num_static_evals_this_turn": 754,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Stuart",
+   "move": [
+    4,
+    7
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     "X",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.0497,
+    "alpha_beta_cutoffs_this_turn": 51,
+    "num_static_evals_this_turn": 700,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Otto2",
+   "move": [
+    4,
+    8
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     "X",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X",
+     "O",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.0278,
+    "alpha_beta_cutoffs_this_turn": 49,
+    "num_static_evals_this_turn": 648,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Stuart",
+   "move": [
+    4,
+    9
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     "X",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.0467,
+    "alpha_beta_cutoffs_this_turn": 47,
+    "num_static_evals_this_turn": 598,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Otto2",
+   "move": [
+    5,
+    0
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     "X",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     " ",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.0278,
+    "alpha_beta_cutoffs_this_turn": 45,
+    "num_static_evals_this_turn": 550,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Stuart",
+   "move": [
+    5,
+    1
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     "X",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     " ",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.0399,
+    "alpha_beta_cutoffs_this_turn": 43,
+    "num_static_evals_this_turn": 504,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Otto2",
+   "move": [
+    5,
+    2
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     "X",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.0251,
+    "alpha_beta_cutoffs_this_turn": 41,
+    "num_static_evals_this_turn": 460,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Stuart",
+   "move": [
+    5,
+    7
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     "X",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.0344,
+    "alpha_beta_cutoffs_this_turn": 39,
+    "num_static_evals_this_turn": 418,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Otto2",
+   "move": [
+    5,
+    8
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     "X",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X",
+     "O",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.0185,
+    "alpha_beta_cutoffs_this_turn": 37,
+    "num_static_evals_this_turn": 378,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Stuart",
+   "move": [
+    5,
+    9
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     "X",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.0259,
+    "alpha_beta_cutoffs_this_turn": 35,
+    "num_static_evals_this_turn": 340,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Otto2",
+   "move": [
+    6,
+    0
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     "X",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.014,
+    "alpha_beta_cutoffs_this_turn": 33,
+    "num_static_evals_this_turn": 304,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Stuart",
+   "move": [
+    6,
+    4
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     "X",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.021,
+    "alpha_beta_cutoffs_this_turn": 31,
+    "num_static_evals_this_turn": 270,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Otto2",
+   "move": [
+    6,
+    5
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     "X",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.097,
+    "alpha_beta_cutoffs_this_turn": 29,
+    "num_static_evals_this_turn": 238,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Stuart",
+   "move": [
+    6,
+    7
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     "X",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.0173,
+    "alpha_beta_cutoffs_this_turn": 27,
+    "num_static_evals_this_turn": 208,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Otto2",
+   "move": [
+    6,
+    8
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     "X",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.0096,
+    "alpha_beta_cutoffs_this_turn": 25,
+    "num_static_evals_this_turn": 180,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Stuart",
+   "move": [
+    6,
+    9
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     "X",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.0125,
+    "alpha_beta_cutoffs_this_turn": 23,
+    "num_static_evals_this_turn": 154,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Otto2",
+   "move": [
+    7,
+    0
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     "X",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.0074,
+    "alpha_beta_cutoffs_this_turn": 21,
+    "num_static_evals_this_turn": 130,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Stuart",
+   "move": [
+    7,
+    2
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     "X",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.0098,
+    "alpha_beta_cutoffs_this_turn": 19,
+    "num_static_evals_this_turn": 108,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Otto2",
+   "move": [
+    7,
+    3
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     "X",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     " ",
+     " ",
+     "O",
+     " ",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.0062,
+    "alpha_beta_cutoffs_this_turn": 17,
+    "num_static_evals_this_turn": 88,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Stuart",
+   "move": [
+    7,
+    4
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     "X",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     " ",
+     "O",
+     " ",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.0076,
+    "alpha_beta_cutoffs_this_turn": 15,
+    "num_static_evals_this_turn": 70,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Otto2",
+   "move": [
+    7,
+    5
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     "X",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     " ",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.006,
+    "alpha_beta_cutoffs_this_turn": 13,
+    "num_static_evals_this_turn": 54,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Stuart",
+   "move": [
+    7,
+    7
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     "X",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.0065,
+    "alpha_beta_cutoffs_this_turn": 11,
+    "num_static_evals_this_turn": 40,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Otto2",
+   "move": [
+    8,
+    0
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     "X",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.0028,
+    "alpha_beta_cutoffs_this_turn": 9,
+    "num_static_evals_this_turn": 28,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Stuart",
+   "move": [
+    8,
+    4
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     "X",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.0026,
+    "alpha_beta_cutoffs_this_turn": 7,
+    "num_static_evals_this_turn": 18,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Otto2",
+   "move": [
+    8,
+    5
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     "X",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X",
+     " ",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.0019,
+    "alpha_beta_cutoffs_this_turn": 5,
+    "num_static_evals_this_turn": 10,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Stuart",
+   "move": [
+    8,
+    6
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     "X",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X",
+     "O",
+     " ",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.0018,
+    "alpha_beta_cutoffs_this_turn": 3,
+    "num_static_evals_this_turn": 4,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Otto2",
+   "move": [
+    8,
+    7
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     "X",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.0012,
+    "alpha_beta_cutoffs_this_turn": 1,
+    "num_static_evals_this_turn": 2,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Stuart",
+   "move": [
+    8,
+    9
+   ],
+   "utterance": "I considered the available lines before choosing this move.",
+   "board": [
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "X",
+     "X",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X",
+     "O"
+    ],
+    [
+     "X",
+     "O",
+     "X",
+     "O",
+     "O",
+     "X",
+     "O",
+     "X",
+     "X",
+     "O"
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.0006,
+    "alpha_beta_cutoffs_this_turn": 0,
+    "num_static_evals_this_turn": 1,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "result",
+   "text": "Game Over; it's a draw",
+   "winner": null
+  }
+ ]
+}

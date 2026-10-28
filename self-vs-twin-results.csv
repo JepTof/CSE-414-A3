@@ -1,0 +1,36 @@
+Transcript,Self nickname,Twin nickname,Self starts as,Twin starts as,Self result,Winner,K,Board (rows x columns)
+Bob-vs-Carl2-in-Random-round-1.json,Bob,Carl2,X,O,Win,Bob,4,6 x 4
+Bob-vs-Dave2-in-Random-round-1.html,Bob,Dave2,X,O,Not recorded,,,
+Bob-vs-Stuart2-in-Random-round-1.json,Bob,Stuart2,X,O,Win,Bob,3,8 x 3
+Bob2-vs-Bob-in-Random-round-1.json,Bob,Bob2,O,X,Loss,Bob2,4,5 x 9
+Bob2-vs-Carl-in-Random-round-1.json,Carl,Bob2,O,X,Loss,Bob2,3,3 x 6
+Carl-vs-Carl2-in-Random-round-1.json,Carl,Carl2,X,O,Win,Carl,3,4 x 3
+Carl-vs-Mel2-in-Random-round-1.json,Carl,Mel2,X,O,Loss,Mel2,4,9 x 6
+Carl-vs-Otto2-in-Random-round-1.json,Carl,Otto2,X,O,Win,Carl,5,7 x 7
+Carl2-vs-Jerry-in-Random-round-1.json,Jerry,Carl2,O,X,Loss,Carl2,3,8 x 3
+Carl2-vs-Stuart-in-Random-round-1.json,Stuart,Carl2,O,X,Loss,Carl2,3,9 x 4
+Dave-vs-Mel2-in-Random-round-1.json,Dave,Mel2,X,O,Win,Dave,3,5 x 3
+Dave2-vs-Bob-in-Random-round-1.json,Bob,Dave2,O,X,Loss,Dave2,3,6 x 3
+Dave2-vs-Dave-in-Random-round-1.json,Dave,Dave2,O,X,Loss,Dave2,3,3 x 8
+Dave2-vs-Stuart-in-Random-round-1.json,Stuart,Dave2,O,X,Loss,Dave2,3,3 x 5
+Jerry2-vs-Dave-in-Random-round-1.json,Dave,Jerry2,O,X,Loss,Jerry2,5,9 x 7
+Kevin-vs-Carl2-in-Random-round-1.json,Kevin,Carl2,X,O,Win,Kevin,3,6 x 5
+Kevin-vs-Dave2-in-Random-round-1.json,Kevin,Dave2,X,O,Draw,,5,6 x 7
+Kevin2-vs-Carl-in-Random-round-1.json,Carl,Kevin2,O,X,Loss,Kevin2,3,5 x 4
+Mel-vs-Dave2-in-Random-round-1.html,Mel,Dave2,X,O,Not recorded,,,
+Mel-vs-Mel2-in-Random-round-1.json,Mel,Mel2,X,O,Draw,,3,3 x 3
+Mel-vs-Otto2-in-Random-round-1.json,Mel,Otto2,X,O,Win,Mel,4,10 x 5
+Mel-vs-Stuart2-in-Random-round-1.json,Mel,Stuart2,X,O,Draw,,5,8 x 7
+Mel2-vs-Carl-in-Random-round-1.json,Carl,Mel2,O,X,Loss,Mel2,3,3 x 8
+Otto-vs-Bob2-in-Random-round-1.json,Otto,Bob2,X,O,Win,Otto,3,7 x 3
+Otto-vs-Carl2-in-Random-round-1.json,Otto,Carl2,X,O,Win,Otto,3,3 x 7
+Otto-vs-Kevin2-in-Random-round-1.json,Otto,Kevin2,X,O,Win,Otto,3,8 x 6
+Otto-vs-Mel2-in-Random-round-1.json,Otto,Mel2,X,O,Draw,,6,9 x 9
+Otto2-vs-Mel-in-Random-round-1.json,Mel,Otto2,O,X,Draw,,5,10 x 8
+Otto2-vs-Stuart-in-Random-round-1.json,Stuart,Otto2,O,X,Draw,,8,9 x 10
+Stuart-vs-Bob2-in-Random-round-1.json,Stuart,Bob2,X,O,Win,Stuart,3,10 x 3
+Stuart-vs-Jerry2-in-Random-round-1.json,Stuart,Jerry2,X,O,Win,Stuart,3,10 x 3
+Stuart-vs-Mel2-in-Random-round-1.json,Stuart,Mel2,X,O,Draw,,5,6 x 7
+Stuart2-vs-Carl-in-Random-round-1.json,Carl,Stuart2,O,X,Win,Carl,4,7 x 8
+Stuart2-vs-Kevin-in-Random-round-1.json,Kevin,Stuart2,O,X,Draw,,5,6 x 6
+Stuart2-vs-Otto-in-Random-round-1.json,Otto,Stuart2,O,X,Draw,,6,7 x 8

@@ -21,6 +21,10 @@ STUDENT_IDS = ['mahika13', 'jeppet'] # The first ID here should
 import time # You'll probably need this to avoid losing a
  # game due to exceeding a time limit.
 
+EXACT = 0
+LOWERBOUND = 1
+UPPERBOUND = 2
+
 # Create your own type of agent by subclassing KAgent:
 
 class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
@@ -41,6 +45,11 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
         self.num_static_evals_this_turn = -1
         self.zobrist_table_num_entries_this_turn = -1
         self.zobrist_table_num_hits_this_turn = -1
+        self.zobrist_num_useful_hits_for_minimax = -1
+        self.zobrist_num_useful_hits_for_ordering = -1
+        self._zobrist_table = None
+        self._zobrist_turn_key = 0
+        self._transposition_table = None
         self.current_game_type = None
         self.playing_mode = KAgent.DEMO
         self.who = 'Gru' if not self.twin else 'Dru'
@@ -78,6 +87,9 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
        self.current_game_type = game_type
        self.playing = what_side_to_play
        self.opponent_nickname = opponent_nickname
+       self._zobrist_table = None
+       self._zobrist_turn_key = 0
+       self._transposition_table = None
 
        # TODO: add your initialization code above this line.
        # IMPORTANT: return 'OK' to signal successful initialization.
@@ -129,7 +141,16 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
             'score': 0,
             'wins': {'X': 0, 'O': 0},
             'threats': {'X': {}, 'O': {}},
+            'hash': 0,
         }
+        if self._zobrist_table is not None:
+            for row in range(rows):
+                for column in range(columns):
+                    cell = board[row][column]
+                    if cell == 'X':
+                        tracker['hash'] ^= self._zobrist_table[row][column][0]
+                    elif cell == 'O':
+                        tracker['hash'] ^= self._zobrist_table[row][column][1]
         for index, window in enumerate(windows):
             record = self._evaluate_window(tracker, window)
             tracker['records'][index] = record
@@ -207,6 +228,16 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
     def _update_tracked_move(self, tracker, row, column, player):
         for index in tracker['affected'][row][column]:
             self._apply_window_record(tracker, tracker['records'][index], -1)
+        old_cell = tracker['board'][row][column]
+        if self._zobrist_table is not None:
+            if old_cell == 'X':
+                tracker['hash'] ^= self._zobrist_table[row][column][0]
+            elif old_cell == 'O':
+                tracker['hash'] ^= self._zobrist_table[row][column][1]
+            if player == 'X':
+                tracker['hash'] ^= self._zobrist_table[row][column][0]
+            elif player == 'O':
+                tracker['hash'] ^= self._zobrist_table[row][column][1]
         tracker['board'][row][column] = player
         for index in tracker['affected'][row][column]:
             record = self._evaluate_window(tracker, tracker['windows'][index])
@@ -238,12 +269,29 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
     # The core of your agent's ability should be implemented here:             
     def make_move(self, current_state, current_remark, time_limit=1000,
                   use_alpha_beta=True,
-                  use_zobrist_hashing=False, max_ply=3,
+                  use_zobrist_hashing=True, max_ply=3,
                   special_static_eval_fn=None):
         self.alpha_beta_cutoffs_this_turn = 0
         self.num_static_evals_this_turn = 0
         self.zobrist_table_num_entries_this_turn = 0
         self.zobrist_table_num_hits_this_turn = 0
+        self.zobrist_num_useful_hits_for_minimax = 0
+        self.zobrist_num_useful_hits_for_ordering = 0
+        if use_zobrist_hashing:
+            board = current_state.board
+            rows = len(board)
+            columns = len(board[0]) if rows else 0
+            self._zobrist_table = [
+                [[random.getrandbits(64), random.getrandbits(64)]
+                 for _ in range(columns)]
+                for _ in range(rows)
+            ]
+            self._zobrist_turn_key = random.getrandbits(64)
+            self._transposition_table = {}
+        else:
+            self._zobrist_table = None
+            self._zobrist_turn_key = 0
+            self._transposition_table = None
         self.playing = current_state.whose_move
         result = self.minimax(
             current_state,
@@ -260,8 +308,8 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
                 'num_static_evals_this_turn': self.num_static_evals_this_turn,
                 'zobrist_table_num_entries_this_turn': self.zobrist_table_num_entries_this_turn,
                 'zobrist_table_num_hits_this_turn': self.zobrist_table_num_hits_this_turn,
-                'zobrist_num_useful_hits_for_minimax': 0,
-                'zobrist_num_useful_hits_for_ordering': 0,
+                'zobrist_num_useful_hits_for_minimax': self.zobrist_num_useful_hits_for_minimax,
+                'zobrist_num_useful_hits_for_ordering': self.zobrist_num_useful_hits_for_ordering,
             }
             return [[move, new_state, stats], new_remark]
         return [[move, new_state], new_remark]
@@ -287,6 +335,8 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
         if beta is None:
             beta = float('inf')
 
+        original_alpha = alpha
+        original_beta = beta
         terminal = _tracker['wins']['X'] or _tracker['wins']['O']
         legal_moves = [
             (row, column)
@@ -294,6 +344,36 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
             for column, cell in enumerate(line)
             if cell == ' '
         ]
+        preferred_move = None
+        if self._transposition_table is not None:
+            state_hash = _tracker['hash']
+            if state.whose_move == 'O':
+                state_hash ^= self._zobrist_turn_key
+            entry = self._transposition_table.get(state_hash)
+            if entry is not None:
+                self.zobrist_table_num_hits_this_turn += 1
+                preferred_move = entry['best_move']
+                if entry['depth'] >= depth_remaining:
+                    self.zobrist_num_useful_hits_for_minimax += 1
+                    if entry['flag'] == EXACT:
+                        cached_state = State(old=state)
+                        if entry['best_move'] is not None:
+                            row, column = entry['best_move']
+                            cached_state.board[row][column] = state.whose_move
+                            cached_state.change_turn()
+                        return [entry['score'], entry['best_move'], cached_state]
+                    if entry['flag'] == LOWERBOUND:
+                        alpha = max(alpha, entry['score'])
+                    elif entry['flag'] == UPPERBOUND:
+                        beta = min(beta, entry['score'])
+                    if alpha >= beta:
+                        cached_state = State(old=state)
+                        if entry['best_move'] is not None:
+                            row, column = entry['best_move']
+                            cached_state.board[row][column] = state.whose_move
+                            cached_state.change_turn()
+                        return [entry['score'], entry['best_move'], cached_state]
+
         if depth_remaining <= 0 or terminal or not legal_moves:
             if not legal_moves and not terminal and special_static_eval_fn is None:
                 value = 0
@@ -303,6 +383,10 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
                 value = self.static_eval(state, tracker=_tracker)
             if self.num_static_evals_this_turn >= 0:
                 self.num_static_evals_this_turn += 1
+            self._store_transposition_entry(
+                state, _tracker, depth_remaining, value,
+                original_alpha, original_beta, None,
+            )
             return [value, None, State(old=state)]
 
         is_max = state.whose_move == 'X'
@@ -311,7 +395,17 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
         best_state = None
         player = state.whose_move
 
-        for row, column in legal_moves:
+        if (self._transposition_table is not None
+                and self.playing_mode != KAgent.AUTOGRADER):
+            ordered_moves = self._order_moves(
+                legal_moves, _tracker, player, preferred_move
+            )
+            if preferred_move in legal_moves:
+                self.zobrist_num_useful_hits_for_ordering += 1
+        else:
+            ordered_moves = legal_moves
+
+        for row, column in ordered_moves:
             self._update_tracked_move(_tracker, row, column, player)
             state.change_turn()
             successor_state = State(old=state)
@@ -342,7 +436,61 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
                     self.alpha_beta_cutoffs_this_turn += 1
                 break
 
+        self._store_transposition_entry(
+            state, _tracker, depth_remaining, best_value,
+            original_alpha, original_beta, best_move,
+        )
         return [best_value, best_move, best_state or State(old=state)]
+
+    def _order_moves(self, legal_moves, tracker, player, preferred_move):
+        opponent = 'O' if player == 'X' else 'X'
+        center_row = (tracker['rows'] - 1) / 2
+        center_column = (tracker['columns'] - 1) / 2
+
+        def move_score(move):
+            row, column = move
+            winning_threats = tracker['threats'][player].get(move, 0)
+            blocked_threats = tracker['threats'][opponent].get(move, 0)
+            tactical_priority = (
+                2 if winning_threats else
+                1 if blocked_threats else
+                0
+            )
+            center_score = -abs(row - center_row) - abs(column - center_column)
+            return (
+                tactical_priority,
+                winning_threats if tactical_priority == 2 else blocked_threats,
+                move == preferred_move,
+                center_score,
+            )
+
+        return sorted(legal_moves, key=move_score, reverse=True)
+
+    def _store_transposition_entry(
+            self, state, tracker, depth, score, alpha, beta, best_move):
+        if self._transposition_table is None:
+            return
+
+        state_hash = tracker['hash']
+        if state.whose_move == 'O':
+            state_hash ^= self._zobrist_turn_key
+        previous = self._transposition_table.get(state_hash)
+        if previous is not None and previous['depth'] > depth:
+            return
+
+        if score <= alpha:
+            flag = UPPERBOUND
+        elif score >= beta:
+            flag = LOWERBOUND
+        else:
+            flag = EXACT
+        self._transposition_table[state_hash] = {
+            'score': score,
+            'depth': depth,
+            'flag': flag,
+            'best_move': best_move,
+        }
+        self.zobrist_table_num_entries_this_turn += 1
  
     def static_eval(self, state, game_type=None, tracker=None):
         if game_type is None:
