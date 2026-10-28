@@ -218,7 +218,6 @@ def test():
     rows = random.randint(6, 8)
     columns = random.randint(6, 8)
     k = random.randint(4, min(5, rows, columns))
-    starting_player = random.choice(("X", "O"))
 
     board = [[' ' for _ in range(columns)] for _ in range(rows)]
     random_game = Game_Type(
@@ -227,12 +226,12 @@ def test():
         k,
         rows,
         columns,
-        [board, starting_player],
+        [board, "X"],
         rows * columns,
         0.25,
     )
     set_game(random_game)
-    print(f"Board: {rows}x{columns}, connect {k}; {starting_player} goes first")
+    print(f"Board: {rows}x{columns}, connect {k}; X goes first")
 
     # Stand-alone test
     print("Starting stand-alone test of GameMaster.py")
@@ -246,9 +245,14 @@ def test():
 
     import mahika13jeppet_KInARow as h_ours
     import ai_KInARow as h_ai
-    px = h_ours.OurAgent()
-    po = h_ai.OurAgent()
+    if random.choice((True, False)):
+        px = h_ours.OurAgent()
+        po = h_ai.OurAgent()
+    else:
+        px = h_ai.OurAgent()
+        po = h_ours.OurAgent()
     set_players(px, po)
+    print(f"X: {px.nickname}; O: {po.nickname}")
     print("Players are set.")
     print("Now let's run the game.")
     print("Players will play in DEMO mode (the default).")

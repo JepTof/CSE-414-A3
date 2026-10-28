@@ -46,8 +46,8 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
         self.who = 'Gru' if not self.twin else 'Dru'
 
     def introduce(self):
-        intro = '\nMy name is ' + self.who + ' and today my minion ' + self.nickname + ' will beat you.\n'+\
-            '"And then I, Mahika (mahika13) and Jeppe (jeppet) will take over the world!!!\n'
+        intro = 'My name is ' + self.who + ' and today my minion ' + self.nickname + ' will beat you.\n'+\
+            'And then I, Mahika (mahika13), and Jeppe (jeppet) will take over the world!!!\n'
         if self.twin: intro += "I am Gru's evil twin!\n"
         return intro
 
