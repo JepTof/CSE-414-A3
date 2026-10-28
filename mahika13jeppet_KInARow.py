@@ -31,11 +31,12 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
     # knows how to instantiate your agent class.
 
     def __init__(self, twin=False):
-        minion_names = ['Kevin', 'Bob', 'Stuart', 'Dave', 'Jerry', 'Carl', 'Mel', 'Carl', 'Otto']
+        minion_names = ['Kevin', 'Bob', 'Stuart']
         index = random.randint(0, len(minion_names) - 1)
         self.twin=twin
         self.nickname = minion_names[index]
-        if twin: self.nickname += '2'
+        if twin:
+            self.nickname = 'Evil ' + self.nickname
         self.long_name = self.nickname + ' the minion'
         if twin: self.long_name += ' II'
         self.persona = 'bland'
@@ -55,9 +56,11 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
         self.who = 'Gru' if not self.twin else 'Dru'
 
     def introduce(self):
-        intro = 'My name is ' + self.who + ' and today my minion ' + self.nickname + ' will beat you.\n'+\
-            'And then I, Mahika (mahika13), and Jeppe (jeppet) will take over the world!!!\n'
-        if self.twin: intro += "I am Gru's evil twin!\n"
+        intro = 'My name is ' + self.who + ' and today my minion, ' + self.nickname + ', will beat you.\n'
+        if not self.twin:
+            intro += 'And then I, Mahika (mahika13), and Jeppe (jeppet) will take over the world!!!\n'
+        else:
+            intro += "I am Gru's evil twin!\n"
         return intro
 
     # Receive and acknowledge information about the game from
@@ -459,19 +462,18 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
             )
             center_score = -abs(row - center_row) - abs(column - center_column)
             neighbour_count = 0
-            if self.twin:
-                neighbour_count = sum(
-                    1
-                    for neighbour_row in range(
-                        max(0, row - 1), min(len(board), row + 2)
-                    )
-                    for neighbour_column in range(
-                        max(0, column - 1),
-                        min(len(board[neighbour_row]), column + 2),
-                    )
-                    if (neighbour_row, neighbour_column) != move
-                    and board[neighbour_row][neighbour_column] in ('X', 'O')
+            neighbour_count = sum(
+                1
+                for neighbour_row in range(
+                    max(0, row - 1), min(len(board), row + 2)
                 )
+                for neighbour_column in range(
+                    max(0, column - 1),
+                    min(len(board[neighbour_row]), column + 2),
+                )
+                if (neighbour_row, neighbour_column) != move
+                and board[neighbour_row][neighbour_column] in ('X', 'O')
+            )
             return (
                 tactical_priority,
                 winning_threats if tactical_priority == 2 else blocked_threats,

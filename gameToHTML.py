@@ -10,6 +10,7 @@ to modify this file to do the assignment.
 '''
 
 import re
+from pathlib import Path
 
 
 def clean(name):
@@ -21,22 +22,24 @@ def clean(name):
 
 TOKEN_IMAGES = {'X': 'X32.png', 'O': 'O32.png',
                 ' ': 'gray32.png', '-': 'black32.png'}
+GAME_OUTPUT_DIR = Path(__file__).resolve().parent / 'games'
 
 
 class HTMLRecorder:
-    '''Writes <X>-vs-<O>-in-<game>-round-<n>.html in the working directory.'''
+    '''Writes <X>-vs-<O>-in-<game>-round-<n>.html in the games directory.'''
 
     def __init__(self):
         self.f = None
 
     def start(self, game_type, x_player, o_player, round=1):
-        fn = (clean(x_player.nickname) + '-vs-' + clean(o_player.nickname)
-              + '-in-' + clean(game_type.short_name) + '-round-' + str(round)
-              + '.html')
+        fn = (GAME_OUTPUT_DIR / (clean(x_player.nickname) + '-vs-'
+              + clean(o_player.nickname) + '-in-' + clean(game_type.short_name)
+              + '-round-' + str(round) + '.html'))
         try:
+            fn.parent.mkdir(parents=True, exist_ok=True)
             self.f = open(fn, 'w')
         except Exception as e:
-            print("Could not open " + fn + " for the game's HTML page: " + str(e))
+            print("Could not open " + str(fn) + " for the game's HTML page: " + str(e))
             return
         self.filename = fn
         self.f.write('<html><head><title>K-in-a-Row game</title></head>\n<body>\n')
@@ -58,7 +61,7 @@ class HTMLRecorder:
         for row in state.board:
             html += '<tr>'
             for token in row:
-                html += ('<td><img src=' + TOKEN_IMAGES.get(token, 'gray32.png')
+                html += ('<td><img src=../' + TOKEN_IMAGES.get(token, 'gray32.png')
                          + '></td>')
             html += '</tr>\n'
         html += '</table><br>\n'

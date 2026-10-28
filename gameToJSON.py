@@ -18,8 +18,10 @@ to do the assignment.
 
 import json
 import re
+from pathlib import Path
 
 FORMAT = 'kiar-transcript/1'
+GAME_OUTPUT_DIR = Path(__file__).resolve().parent / 'games'
 
 # Statistics an agent may keep on itself.  These are the attribute names
 # declared in agent_base.KAgent, so any agent has them; an agent that does not
@@ -54,16 +56,17 @@ def player_info(player):
 
 
 class JSONRecorder:
-    '''Writes <X>-vs-<O>-in-<game>-round-<n>.json in the working directory.'''
+    '''Writes <X>-vs-<O>-in-<game>-round-<n>.json in the games directory.'''
 
     def __init__(self):
         self.data = None
         self.filename = None
 
     def start(self, game_type, x_player, o_player, round=1):
-        self.filename = (clean(x_player.nickname) + '-vs-' + clean(o_player.nickname)
-                         + '-in-' + clean(game_type.short_name)
-                         + '-round-' + str(round) + '.json')
+        self.filename = (GAME_OUTPUT_DIR / (clean(x_player.nickname) + '-vs-'
+                         + clean(o_player.nickname) + '-in-'
+                         + clean(game_type.short_name) + '-round-'
+                         + str(round) + '.json'))
         initial = game_type.initial_state
         self.data = {
             'format': FORMAT,
@@ -118,6 +121,7 @@ class JSONRecorder:
     def end(self):
         if self.data is None: return
         try:
+            self.filename.parent.mkdir(parents=True, exist_ok=True)
             with open(self.filename, 'w') as f:
                 json.dump(self.data, f, indent=1)
         except Exception as e:
