@@ -75,7 +75,7 @@ class KAgent:
             expected_time_per_move = 0.1, # Time limits can be
                                           # changed mid-game by the game master,
                                           # via the make_move method.
-            utterances_matter = True):    # If False, just return 'OK' for each utterance
+            utterances_matter = False):    # If False, just return 'OK' for each utterance
                                           # and do not import any LLM modules..
 
        # Write code to save the relevant information in variables

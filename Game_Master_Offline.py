@@ -118,15 +118,13 @@ def runGame():
 
     currentRemark = "The game is starting."
     RECORDERS.state(currentState)
-    XsTurn = True
     global FINISHED
     FINISHED = False
     turnCount = 0
     printState(currentState)
     while not FINISHED:
         who = currentState.whose_move
-        mover = player1 if XsTurn else player2
-        XsTurn = not XsTurn
+        mover = player1 if who == 'X' else player2
 
         started = time()
         playerResult = mover.make_move(currentState, currentRemark, TIME_PER_MOVE)
@@ -214,19 +212,42 @@ def set_wait_time(t):
     WAIT_TIME_AFTER_MOVES = float(t)
 
 def test():
+    import random
+    from game_types import Game_Type
+
+    rows = random.randint(6, 8)
+    columns = random.randint(6, 8)
+    k = random.randint(4, min(5, rows, columns))
+    starting_player = random.choice(("X", "O"))
+
+    board = [[' ' for _ in range(columns)] for _ in range(rows)]
+    random_game = Game_Type(
+        "Random-sized K-in-a-Row",
+        "Random",
+        k,
+        rows,
+        columns,
+        [board, starting_player],
+        rows * columns,
+        0.25,
+    )
+    set_game(random_game)
+    print(f"Board: {rows}x{columns}, connect {k}; {starting_player} goes first")
+
     # Stand-alone test
     print("Starting stand-alone test of GameMaster.py")
     # Edit this to change what version of K-in-a-Row is used.
-    set_game(TTT) # default is Tic-Tac-Toe
+    #set_game(TTT) # default is Tic-Tac-Toe
     #set_game(FIAR) # Five in a Row
     # Import 1 or 2 agent files here.
     # If using only 1, create 2 instances of it, one of
     # which is a "twin".
+    
 
     import mahika13jeppet_KInARow as h_ours
-    import RandomPlayer as h
+    import ai_KInARow as h_ai
     px = h_ours.OurAgent()
-    po = h.OurAgent(twin=True)
+    po = h_ai.OurAgent()
     set_players(px, po)
     print("Players are set.")
     print("Now let's run the game.")

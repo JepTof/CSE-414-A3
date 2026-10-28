@@ -314,6 +314,7 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
         for row, column in legal_moves:
             self._update_tracked_move(_tracker, row, column, player)
             state.change_turn()
+            successor_state = State(old=state)
             result = self.minimax(
                 state,
                 depth_remaining - 1,
@@ -330,7 +331,7 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
             if (is_max and value > best_value) or (not is_max and value < best_value):
                 best_value = value
                 best_move = (row, column)
-                best_state = result[2]
+                best_state = successor_state
 
             if is_max:
                 alpha = max(alpha, best_value)
