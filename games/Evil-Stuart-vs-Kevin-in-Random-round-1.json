@@ -4,32 +4,19 @@
  "game": {
   "long_name": "Random-sized K-in-a-Row",
   "short_name": "Random",
-  "k": 4,
-  "n": 6,
-  "m": 7,
-  "turn_limit": 42,
+  "k": 3,
+  "n": 5,
+  "m": 5,
+  "turn_limit": 25,
   "initial_board": [
    [
     " ",
     " ",
     " ",
     " ",
-    " ",
-    " ",
     " "
    ],
    [
-    " ",
-    " ",
-    " ",
-    " ",
-    " ",
-    " ",
-    " "
-   ],
-   [
-    " ",
-    " ",
     " ",
     " ",
     " ",
@@ -41,8 +28,6 @@
     " ",
     " ",
     " ",
-    " ",
-    " ",
     " "
    ],
    [
@@ -50,13 +35,9 @@
     " ",
     " ",
     " ",
-    " ",
-    " ",
     " "
    ],
    [
-    " ",
-    " ",
     " ",
     " ",
     " ",
@@ -115,17 +96,15 @@
    "nickname": "Evil Stuart",
    "move": [
     2,
-    3
+    2
    ],
-   "utterance": "HEEHEEHEE HEEHEE? GRRR? RAAAH! HUNT! GRAAAH!",
+   "utterance": "GRRR GRRAH! HEEHEEHEE! CHAOS BEGINS! RAAAH!",
    "board": [
     [
      " ",
      " ",
      " ",
      " ",
-     " ",
-     " ",
      " "
     ],
     [
@@ -133,17 +112,13 @@
      " ",
      " ",
      " ",
-     " ",
-     " ",
      " "
     ],
     [
-     " ",
      " ",
      " ",
      "X",
      " ",
-     " ",
      " "
     ],
     [
@@ -151,22 +126,9 @@
      " ",
      " ",
      " ",
-     " ",
-     " ",
      " "
     ],
     [
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
      " ",
      " ",
      " ",
@@ -176,11 +138,11 @@
    ],
    "whose_move": "O",
    "stats": {
-    "seconds": 0.6814,
-    "alpha_beta_cutoffs_this_turn": 122,
-    "num_static_evals_this_turn": 1154,
-    "zobrist_table_num_entries_this_turn": 1323,
-    "zobrist_table_num_hits_this_turn": 877
+    "seconds": 0.1908,
+    "alpha_beta_cutoffs_this_turn": 71,
+    "num_static_evals_this_turn": 479,
+    "zobrist_table_num_entries_this_turn": 580,
+    "zobrist_table_num_hits_this_turn": 376
    }
   },
   {
@@ -189,181 +151,20 @@
    "nickname": "Kevin",
    "move": [
     1,
-    3
-   ],
-   "utterance": "Bello, Big Boss Hana, dul... Bello... papoy? sae!",
-   "board": [
-    [
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     "O",
-     " ",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     "X",
-     " ",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " "
-    ]
-   ],
-   "whose_move": "X",
-   "stats": {
-    "seconds": 0.8463,
-    "alpha_beta_cutoffs_this_turn": 156,
-    "num_static_evals_this_turn": 1560,
-    "zobrist_table_num_entries_this_turn": 1766,
-    "zobrist_table_num_hits_this_turn": 587
-   }
-  },
-  {
-   "type": "move",
-   "side": "X",
-   "nickname": "Evil Stuart",
-   "move": [
-    2,
     2
    ],
-   "utterance": "HEEHEEHEE GRRR! WAAAAH! RAAAH... WAAAAH!",
+   "utterance": "Boss, po ka Waaaah! Po ka?! Bello... papoy? bello!",
    "board": [
     [
      " ",
      " ",
      " ",
      " ",
-     " ",
-     " ",
      " "
     ],
     [
      " ",
      " ",
-     " ",
-     "O",
-     " ",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     "X",
-     "X",
-     " ",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " "
-    ]
-   ],
-   "whose_move": "O",
-   "stats": {
-    "seconds": 0.363,
-    "alpha_beta_cutoffs_this_turn": 116,
-    "num_static_evals_this_turn": 1404,
-    "zobrist_table_num_entries_this_turn": 1565,
-    "zobrist_table_num_hits_this_turn": 479
-   }
-  },
-  {
-   "type": "move",
-   "side": "O",
-   "nickname": "Kevin",
-   "move": [
-    2,
-    4
-   ],
-   "utterance": "Boss, po ka Hana, dul... Komay? Not yet. bello!",
-   "board": [
-    [
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     "O",
-     " ",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     "X",
-     "X",
      "O",
      " ",
      " "
@@ -371,9 +172,7 @@
     [
      " ",
      " ",
-     " ",
-     " ",
-     " ",
+     "X",
      " ",
      " "
     ],
@@ -382,13 +181,9 @@
      " ",
      " ",
      " ",
-     " ",
-     " ",
      " "
     ],
     [
-     " ",
-     " ",
      " ",
      " ",
      " ",
@@ -398,11 +193,11 @@
    ],
    "whose_move": "X",
    "stats": {
-    "seconds": 0.5901,
-    "alpha_beta_cutoffs_this_turn": 111,
-    "num_static_evals_this_turn": 1730,
-    "zobrist_table_num_entries_this_turn": 1888,
-    "zobrist_table_num_hits_this_turn": 421
+    "seconds": 0.2993,
+    "alpha_beta_cutoffs_this_turn": 67,
+    "num_static_evals_this_turn": 1110,
+    "zobrist_table_num_entries_this_turn": 1230,
+    "zobrist_table_num_hits_this_turn": 233
    }
   },
   {
@@ -413,41 +208,26 @@
     2,
     1
    ],
-   "utterance": "HEEHEEHEE GRRAH! HEEHEEHEE! CHAOS! BLA-BLA!",
+   "utterance": "GRRR GRRR! WAAAAH! CHAOS! BLA-BLA!",
    "board": [
     [
      " ",
      " ",
      " ",
      " ",
-     " ",
-     " ",
      " "
     ],
     [
      " ",
      " ",
-     " ",
-     "O",
-     " ",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     "X",
-     "X",
-     "X",
      "O",
      " ",
      " "
     ],
     [
      " ",
-     " ",
-     " ",
-     " ",
-     " ",
+     "X",
+     "X",
      " ",
      " "
     ],
@@ -456,13 +236,9 @@
      " ",
      " ",
      " ",
-     " ",
-     " ",
      " "
     ],
     [
-     " ",
-     " ",
      " ",
      " ",
      " ",
@@ -472,122 +248,97 @@
    ],
    "whose_move": "O",
    "stats": {
-    "seconds": 0.3281,
-    "alpha_beta_cutoffs_this_turn": 149,
-    "num_static_evals_this_turn": 1666,
-    "zobrist_table_num_entries_this_turn": 1864,
-    "zobrist_table_num_hits_this_turn": 585
+    "seconds": 0.0933,
+    "alpha_beta_cutoffs_this_turn": 66,
+    "num_static_evals_this_turn": 627,
+    "zobrist_table_num_entries_this_turn": 728,
+    "zobrist_table_num_hits_this_turn": 198
    }
   },
   {
    "type": "move",
    "side": "O",
    "nickname": "Kevin",
+   "move": [
+    2,
+    3
+   ],
+   "utterance": "Haiyaku, team Ai-ai-ai! Stopa! Bee do! Banana? papoy!",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     "X",
+     "O",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.0884,
+    "alpha_beta_cutoffs_this_turn": 62,
+    "num_static_evals_this_turn": 106,
+    "zobrist_table_num_entries_this_turn": 173,
+    "zobrist_table_num_hits_this_turn": 88
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Evil Stuart",
    "move": [
     2,
     0
    ],
-   "utterance": "Bello, Big Boss Hana, dul... Stopa, Big Boss! po ka?!",
+   "utterance": "RAAAH BLA-BLA-BLA! RAAAH! CHOMP! RAAAH!",
    "board": [
     [
      " ",
      " ",
      " ",
      " ",
-     " ",
-     " ",
      " "
     ],
     [
      " ",
      " ",
-     " ",
-     "O",
-     " ",
-     " ",
-     " "
-    ],
-    [
-     "O",
-     "X",
-     "X",
-     "X",
      "O",
      " ",
      " "
     ],
     [
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " "
-    ]
-   ],
-   "whose_move": "X",
-   "stats": {
-    "seconds": 0.2728,
-    "alpha_beta_cutoffs_this_turn": 106,
-    "num_static_evals_this_turn": 442,
-    "zobrist_table_num_entries_this_turn": 555,
-    "zobrist_table_num_hits_this_turn": 148
-   }
-  },
-  {
-   "type": "move",
-   "side": "X",
-   "nickname": "Evil Stuart",
-   "move": [
-    3,
-    5
-   ],
-   "utterance": "HEEHEEHEE HEEHEE? GRRR? GRRR... WAIT. GRRR!",
-   "board": [
-    [
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     "O",
-     " ",
-     " ",
-     " "
-    ],
-    [
-     "O",
      "X",
      "X",
      "X",
      "O",
-     " ",
      " "
     ],
     [
@@ -595,22 +346,9 @@
      " ",
      " ",
      " ",
-     " ",
-     "X",
      " "
     ],
     [
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
      " ",
      " ",
      " ",
@@ -620,387 +358,17 @@
    ],
    "whose_move": "O",
    "stats": {
-    "seconds": 0.3759,
-    "alpha_beta_cutoffs_this_turn": 137,
-    "num_static_evals_this_turn": 1922,
-    "zobrist_table_num_entries_this_turn": 2121,
-    "zobrist_table_num_hits_this_turn": 588
-   }
-  },
-  {
-   "type": "move",
-   "side": "O",
-   "nickname": "Kevin",
-   "move": [
-    1,
-    4
-   ],
-   "utterance": "Papoy, papoy Po ka? Si or no? No rush, Big Boss tank yu!",
-   "board": [
-    [
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     "O",
-     "O",
-     " ",
-     " "
-    ],
-    [
-     "O",
-     "X",
-     "X",
-     "X",
-     "O",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     "X",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " "
-    ]
-   ],
-   "whose_move": "X",
-   "stats": {
-    "seconds": 0.5406,
-    "alpha_beta_cutoffs_this_turn": 165,
-    "num_static_evals_this_turn": 1628,
-    "zobrist_table_num_entries_this_turn": 1843,
-    "zobrist_table_num_hits_this_turn": 466
-   }
-  },
-  {
-   "type": "move",
-   "side": "X",
-   "nickname": "Evil Stuart",
-   "move": [
-    3,
-    2
-   ],
-   "utterance": "WAAAAH GRRR! WAAAAH! NOTHING! BLA-BLA!",
-   "board": [
-    [
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     "O",
-     "O",
-     " ",
-     " "
-    ],
-    [
-     "O",
-     "X",
-     "X",
-     "X",
-     "O",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     "X",
-     " ",
-     " ",
-     "X",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " "
-    ]
-   ],
-   "whose_move": "O",
-   "stats": {
-    "seconds": 0.1276,
-    "alpha_beta_cutoffs_this_turn": 98,
-    "num_static_evals_this_turn": 820,
-    "zobrist_table_num_entries_this_turn": 957,
-    "zobrist_table_num_hits_this_turn": 604
-   }
-  },
-  {
-   "type": "move",
-   "side": "O",
-   "nickname": "Kevin",
-   "move": [
-    1,
-    2
-   ],
-   "utterance": "Hana, dul Kanpai! Mazel tov! Hana, dul, sae! banana!",
-   "board": [
-    [
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     "O",
-     "O",
-     "O",
-     " ",
-     " "
-    ],
-    [
-     "O",
-     "X",
-     "X",
-     "X",
-     "O",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     "X",
-     " ",
-     " ",
-     "X",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " "
-    ]
-   ],
-   "whose_move": "X",
-   "stats": {
-    "seconds": 0.2671,
-    "alpha_beta_cutoffs_this_turn": 95,
-    "num_static_evals_this_turn": 964,
-    "zobrist_table_num_entries_this_turn": 1097,
-    "zobrist_table_num_hits_this_turn": 319
-   }
-  },
-  {
-   "type": "move",
-   "side": "X",
-   "nickname": "Evil Stuart",
-   "move": [
-    1,
-    1
-   ],
-   "utterance": "BLA-BLA-BLA WAAAAH! GRRR! RAAAH! WAAAAH! GRRR!",
-   "board": [
-    [
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     "X",
-     "O",
-     "O",
-     "O",
-     " ",
-     " "
-    ],
-    [
-     "O",
-     "X",
-     "X",
-     "X",
-     "O",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     "X",
-     " ",
-     " ",
-     "X",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " "
-    ]
-   ],
-   "whose_move": "O",
-   "stats": {
-    "seconds": 0.0407,
-    "alpha_beta_cutoffs_this_turn": 92,
-    "num_static_evals_this_turn": 156,
-    "zobrist_table_num_entries_this_turn": 253,
-    "zobrist_table_num_hits_this_turn": 128
-   }
-  },
-  {
-   "type": "move",
-   "side": "O",
-   "nickname": "Kevin",
-   "move": [
-    1,
-    5
-   ],
-   "utterance": "Komay, buddies Kanpai! Mazel tov! Bello, banana! po ka?!",
-   "board": [
-    [
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     "X",
-     "O",
-     "O",
-     "O",
-     "O",
-     " "
-    ],
-    [
-     "O",
-     "X",
-     "X",
-     "X",
-     "O",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     "X",
-     " ",
-     " ",
-     "X",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " "
-    ],
-    [
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " ",
-     " "
-    ]
-   ],
-   "whose_move": "X",
-   "stats": {
-    "seconds": 0.2541,
-    "alpha_beta_cutoffs_this_turn": 60,
-    "num_static_evals_this_turn": 581,
-    "zobrist_table_num_entries_this_turn": 674,
-    "zobrist_table_num_hits_this_turn": 446
+    "seconds": 0.014,
+    "alpha_beta_cutoffs_this_turn": 40,
+    "num_static_evals_this_turn": 63,
+    "zobrist_table_num_entries_this_turn": 106,
+    "zobrist_table_num_hits_this_turn": 64
    }
   },
   {
    "type": "result",
-   "text": "Win for O at [1][3] in direction (0, 1)",
-   "winner": "O"
+   "text": "Win for X at [2][0] in direction (0, 1)",
+   "winner": "X"
   }
  ]
 }

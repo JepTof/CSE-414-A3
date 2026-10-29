@@ -13,6 +13,7 @@ from time import sleep, time
 
 from winTesterForK import winTesterForK
 from game_types import TTT, FIAR, Cassini
+from fish_audio_tts import FishAudioError, FishAudioTTS
 
 # --- Recording the game ---------------------------------------------------
 # A game can be written out in more than one format at once.  Each "recorder"
@@ -25,6 +26,7 @@ from game_types import TTT, FIAR, Cassini
 # change anything else about the recording to do the assignment.
 USE_HTML = True
 USE_JSON = True
+ENABLE_VOICE = True
 
 
 class _Recorders:
@@ -83,6 +85,14 @@ def runGame():
     currentState = INITIAL_STATE
     player1 = PLAYERX
     player2 = PLAYERO
+    voice = None
+    voice_enabled = ENABLE_VOICE
+    if voice_enabled:
+        try:
+            voice = FishAudioTTS()
+        except FishAudioError as error:
+            renderCommentary(f"Voice disabled: {error}")
+            voice_enabled = False
 
     RECORDERS.start(GAME_TYPE, player1, player2, 1)
 
@@ -146,6 +156,12 @@ def runGame():
         renderCommentary(utteranceReport)
         RECORDERS.move(who, mover, move, currentState, currentRemark,
                        stats=collect_stats(mover, elapsed, returned_stats))
+        if voice_enabled:
+            try:
+                voice.speak(mover.nickname, currentRemark)
+            except FishAudioError as error:
+                renderCommentary(f"Voice playback disabled: {error}")
+                voice_enabled = False
 
         possibleWin = winTesterForK(currentState, move, K)
         if possibleWin != "No win":
