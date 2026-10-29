@@ -1,0 +1,356 @@
+{
+ "format": "kiar-transcript/1",
+ "round": 1,
+ "game": {
+  "long_name": "Random-sized K-in-a-Row",
+  "short_name": "Random",
+  "k": 3,
+  "n": 4,
+  "m": 6,
+  "turn_limit": 24,
+  "initial_board": [
+   [
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " "
+   ],
+   [
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " "
+   ],
+   [
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " "
+   ],
+   [
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " "
+   ]
+  ],
+  "first_move": "X"
+ },
+ "players": {
+  "X": {
+   "nickname": "Evil Kevin",
+   "long_name": "Evil Kevin the minion II",
+   "persona": "bland",
+   "voice_info": {
+    "Chrome": 10,
+    "Firefox": 2,
+    "other": 0
+   }
+  },
+  "O": {
+   "nickname": "Kevin",
+   "long_name": "Kevin the minion",
+   "persona": "bland",
+   "voice_info": {
+    "Chrome": 10,
+    "Firefox": 2,
+    "other": 0
+   }
+  }
+ },
+ "events": [
+  {
+   "type": "intro",
+   "side": "X",
+   "nickname": "Evil Kevin",
+   "text": "My name is Dru and today my minion, Evil Kevin, will beat you.\nI am Gru's evil twin!\n"
+  },
+  {
+   "type": "intro",
+   "side": "O",
+   "nickname": "Kevin",
+   "text": "My name is Gru and today my minion, Kevin, will beat you.\nAnd then I, Mahika (mahika13), and Jeppe (jeppet) will take over the world!!!\n"
+  },
+  {
+   "type": "gm",
+   "text": "We're playing Random-sized K-in-a-Row."
+  },
+  {
+   "type": "gm",
+   "text": "Let's Play!"
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Evil Kevin",
+   "move": [
+    1,
+    2
+   ],
+   "utterance": "BOSS, GRRR BEE DOO! GRRAAH! RAAAH! HUNT! RAAAH!",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.1595,
+    "alpha_beta_cutoffs_this_turn": 68,
+    "num_static_evals_this_turn": 579,
+    "zobrist_table_num_entries_this_turn": 676,
+    "zobrist_table_num_hits_this_turn": 202
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Kevin",
+   "move": [
+    1,
+    3
+   ],
+   "utterance": "Papoy, papoy Bee do, bee do! Watcha tu... wait tank yu!",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.3584,
+    "alpha_beta_cutoffs_this_turn": 65,
+    "num_static_evals_this_turn": 934,
+    "zobrist_table_num_entries_this_turn": 1050,
+    "zobrist_table_num_hits_this_turn": 293
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Evil Kevin",
+   "move": [
+    2,
+    2
+   ],
+   "utterance": "GRRAAH GRRR! BANANA! RAAAH! SURPRISE! STUPA!",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.0986,
+    "alpha_beta_cutoffs_this_turn": 61,
+    "num_static_evals_this_turn": 537,
+    "zobrist_table_num_entries_this_turn": 632,
+    "zobrist_table_num_hits_this_turn": 215
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Kevin",
+   "move": [
+    0,
+    2
+   ],
+   "utterance": "Bello, bello Bee do, bee do! Stopa! Ai-ai-ai! sae!",
+   "board": [
+    [
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.0953,
+    "alpha_beta_cutoffs_this_turn": 59,
+    "num_static_evals_this_turn": 101,
+    "zobrist_table_num_entries_this_turn": 165,
+    "zobrist_table_num_hits_this_turn": 84
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Evil Kevin",
+   "move": [
+    3,
+    2
+   ],
+   "utterance": "RAAAH GRRAAH! RAAAH! RAAAH! BANANA! STUPA!",
+   "board": [
+    [
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.0154,
+    "alpha_beta_cutoffs_this_turn": 38,
+    "num_static_evals_this_turn": 77,
+    "zobrist_table_num_entries_this_turn": 119,
+    "zobrist_table_num_hits_this_turn": 61
+   }
+  },
+  {
+   "type": "result",
+   "text": "Win for X at [2][2] in direction (1, 0)",
+   "winner": "X"
+  }
+ ]
+}

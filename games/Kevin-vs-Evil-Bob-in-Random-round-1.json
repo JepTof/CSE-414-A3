@@ -1,0 +1,1966 @@
+{
+ "format": "kiar-transcript/1",
+ "round": 1,
+ "game": {
+  "long_name": "Random-sized K-in-a-Row",
+  "short_name": "Random",
+  "k": 5,
+  "n": 6,
+  "m": 5,
+  "turn_limit": 30,
+  "initial_board": [
+   [
+    " ",
+    " ",
+    " ",
+    " ",
+    " "
+   ],
+   [
+    " ",
+    " ",
+    " ",
+    " ",
+    " "
+   ],
+   [
+    " ",
+    " ",
+    " ",
+    " ",
+    " "
+   ],
+   [
+    " ",
+    " ",
+    " ",
+    " ",
+    " "
+   ],
+   [
+    " ",
+    " ",
+    " ",
+    " ",
+    " "
+   ],
+   [
+    " ",
+    " ",
+    " ",
+    " ",
+    " "
+   ]
+  ],
+  "first_move": "X"
+ },
+ "players": {
+  "X": {
+   "nickname": "Kevin",
+   "long_name": "Kevin the minion",
+   "persona": "bland",
+   "voice_info": {
+    "Chrome": 10,
+    "Firefox": 2,
+    "other": 0
+   }
+  },
+  "O": {
+   "nickname": "Evil Bob",
+   "long_name": "Evil Bob the minion II",
+   "persona": "bland",
+   "voice_info": {
+    "Chrome": 10,
+    "Firefox": 2,
+    "other": 0
+   }
+  }
+ },
+ "events": [
+  {
+   "type": "intro",
+   "side": "X",
+   "nickname": "Kevin",
+   "text": "My name is Gru and today my minion, Kevin, will beat you.\nAnd then I, Mahika (mahika13), and Jeppe (jeppet) will take over the world!!!\n"
+  },
+  {
+   "type": "intro",
+   "side": "O",
+   "nickname": "Evil Bob",
+   "text": "My name is Dru and today my minion, Evil Bob, will beat you.\nI am Gru's evil twin!\n"
+  },
+  {
+   "type": "gm",
+   "text": "We're playing Random-sized K-in-a-Row."
+  },
+  {
+   "type": "gm",
+   "text": "Let's Play!"
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Kevin",
+   "move": [
+    3,
+    3
+   ],
+   "utterance": "Bello, buddies Hana, dul... Hana, dul, sae! banana!",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.4718,
+    "alpha_beta_cutoffs_this_turn": 223,
+    "num_static_evals_this_turn": 1008,
+    "zobrist_table_num_entries_this_turn": 1279,
+    "zobrist_table_num_hits_this_turn": 481
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Evil Bob",
+   "move": [
+    2,
+    2
+   ],
+   "utterance": "HEEHEE NYA? GRRR? RAAAH... WAAAAH!",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.342,
+    "alpha_beta_cutoffs_this_turn": 114,
+    "num_static_evals_this_turn": 974,
+    "zobrist_table_num_entries_this_turn": 1132,
+    "zobrist_table_num_hits_this_turn": 366
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Kevin",
+   "move": [
+    3,
+    2
+   ],
+   "utterance": "Hana, dul Hmm... bello? Hana... dul... sae!",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "X",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.2093,
+    "alpha_beta_cutoffs_this_turn": 80,
+    "num_static_evals_this_turn": 654,
+    "zobrist_table_num_entries_this_turn": 772,
+    "zobrist_table_num_hits_this_turn": 444
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Evil Bob",
+   "move": [
+    3,
+    1
+   ],
+   "utterance": "HEEHEE WAAAAH? NOTHING! NYAHAHA!",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.4613,
+    "alpha_beta_cutoffs_this_turn": 76,
+    "num_static_evals_this_turn": 683,
+    "zobrist_table_num_entries_this_turn": 795,
+    "zobrist_table_num_hits_this_turn": 361
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Kevin",
+   "move": [
+    2,
+    3
+   ],
+   "utterance": "Bello, Big Boss Hmm... bello? Bello... papoy? papoy!",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.2686,
+    "alpha_beta_cutoffs_this_turn": 103,
+    "num_static_evals_this_turn": 882,
+    "zobrist_table_num_entries_this_turn": 1023,
+    "zobrist_table_num_hits_this_turn": 315
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Evil Bob",
+   "move": [
+    4,
+    1
+   ],
+   "utterance": "WAAAAH HEEHEE? BEE DOO? CHOMP!",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.2549,
+    "alpha_beta_cutoffs_this_turn": 104,
+    "num_static_evals_this_turn": 1031,
+    "zobrist_table_num_entries_this_turn": 1175,
+    "zobrist_table_num_hits_this_turn": 316
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Kevin",
+   "move": [
+    4,
+    3
+   ],
+   "utterance": "Haiyaku, team Kanpai! Mazel tov! Komay? Not yet. sae!",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     " ",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.1918,
+    "alpha_beta_cutoffs_this_turn": 153,
+    "num_static_evals_this_turn": 990,
+    "zobrist_table_num_entries_this_turn": 1196,
+    "zobrist_table_num_hits_this_turn": 493
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Evil Bob",
+   "move": [
+    1,
+    3
+   ],
+   "utterance": "HEEHEE HEEHEE? GRRR... WAIT. BANANAAAA!",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     " ",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.1486,
+    "alpha_beta_cutoffs_this_turn": 70,
+    "num_static_evals_this_turn": 630,
+    "zobrist_table_num_entries_this_turn": 735,
+    "zobrist_table_num_hits_this_turn": 328
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Kevin",
+   "move": [
+    2,
+    1
+   ],
+   "utterance": "Komay, buddies Bello! Tank yu! No rush, Big Boss sae!",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     " ",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.1033,
+    "alpha_beta_cutoffs_this_turn": 83,
+    "num_static_evals_this_turn": 764,
+    "zobrist_table_num_entries_this_turn": 879,
+    "zobrist_table_num_hits_this_turn": 263
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Evil Bob",
+   "move": [
+    1,
+    0
+   ],
+   "utterance": "NYA HEEHEE? RAAAH... GRRR!",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     "O",
+     " ",
+     " ",
+     "O",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     " ",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.4985,
+    "alpha_beta_cutoffs_this_turn": 161,
+    "num_static_evals_this_turn": 1617,
+    "zobrist_table_num_entries_this_turn": 1841,
+    "zobrist_table_num_hits_this_turn": 727
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Kevin",
+   "move": [
+    4,
+    0
+   ],
+   "utterance": "Bello, tropa Po ka? Si or no? Bello... papoy? banana!",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     "O",
+     " ",
+     " ",
+     "O",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "X",
+     " "
+    ],
+    [
+     "X",
+     "O",
+     " ",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.1325,
+    "alpha_beta_cutoffs_this_turn": 69,
+    "num_static_evals_this_turn": 579,
+    "zobrist_table_num_entries_this_turn": 681,
+    "zobrist_table_num_hits_this_turn": 240
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Evil Bob",
+   "move": [
+    1,
+    4
+   ],
+   "utterance": "NYAHAHA WAAAAH? GRRR... WAIT. WAAAAH!",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     "O",
+     " ",
+     " ",
+     "O",
+     "O"
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "X",
+     " "
+    ],
+    [
+     "X",
+     "O",
+     " ",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.2312,
+    "alpha_beta_cutoffs_this_turn": 82,
+    "num_static_evals_this_turn": 443,
+    "zobrist_table_num_entries_this_turn": 561,
+    "zobrist_table_num_hits_this_turn": 272
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Kevin",
+   "move": [
+    1,
+    2
+   ],
+   "utterance": "Hana, dul, sae Hmm... bello? Komay? Not yet. sae!",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     "O",
+     " ",
+     "X",
+     "O",
+     "O"
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "X",
+     " "
+    ],
+    [
+     "X",
+     "O",
+     " ",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.0615,
+    "alpha_beta_cutoffs_this_turn": 49,
+    "num_static_evals_this_turn": 292,
+    "zobrist_table_num_entries_this_turn": 365,
+    "zobrist_table_num_hits_this_turn": 157
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Evil Bob",
+   "move": [
+    4,
+    2
+   ],
+   "utterance": "NYAHAHA HEEHEE? NOTHING! GRRR!",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     "O",
+     " ",
+     "X",
+     "O",
+     "O"
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "X",
+     " "
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.1165,
+    "alpha_beta_cutoffs_this_turn": 61,
+    "num_static_evals_this_turn": 382,
+    "zobrist_table_num_entries_this_turn": 479,
+    "zobrist_table_num_hits_this_turn": 271
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Kevin",
+   "move": [
+    0,
+    2
+   ],
+   "utterance": "Bello, buddies Hmm... bello? Hana... dul... papoy!",
+   "board": [
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     " "
+    ],
+    [
+     "O",
+     " ",
+     "X",
+     "O",
+     "O"
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "X",
+     " "
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.0742,
+    "alpha_beta_cutoffs_this_turn": 71,
+    "num_static_evals_this_turn": 367,
+    "zobrist_table_num_entries_this_turn": 469,
+    "zobrist_table_num_hits_this_turn": 176
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Evil Bob",
+   "move": [
+    5,
+    2
+   ],
+   "utterance": "BANANAAAA HEEHEE? WAAAAH... BORED. CHOMP!",
+   "board": [
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     " "
+    ],
+    [
+     "O",
+     " ",
+     "X",
+     "O",
+     "O"
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "X",
+     " "
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.0728,
+    "alpha_beta_cutoffs_this_turn": 40,
+    "num_static_evals_this_turn": 253,
+    "zobrist_table_num_entries_this_turn": 320,
+    "zobrist_table_num_hits_this_turn": 167
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Kevin",
+   "move": [
+    2,
+    4
+   ],
+   "utterance": "Bello, bello Hana, dul... Watcha tu... wait po ka?!",
+   "board": [
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     " "
+    ],
+    [
+     "O",
+     " ",
+     "X",
+     "O",
+     "O"
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     "X"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "X",
+     " "
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.0711,
+    "alpha_beta_cutoffs_this_turn": 54,
+    "num_static_evals_this_turn": 329,
+    "zobrist_table_num_entries_this_turn": 407,
+    "zobrist_table_num_hits_this_turn": 119
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Evil Bob",
+   "move": [
+    1,
+    1
+   ],
+   "utterance": "GRRR WAAAAH? WAAAAH... BORED. GRRR!",
+   "board": [
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     " "
+    ],
+    [
+     "O",
+     "O",
+     "X",
+     "O",
+     "O"
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "X",
+     "X"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "X",
+     " "
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.0473,
+    "alpha_beta_cutoffs_this_turn": 49,
+    "num_static_evals_this_turn": 293,
+    "zobrist_table_num_entries_this_turn": 366,
+    "zobrist_table_num_hits_this_turn": 111
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Kevin",
+   "move": [
+    2,
+    0
+   ],
+   "utterance": "Boss, po ka Hmm... bello? No rush, Big Boss bello!",
+   "board": [
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     " "
+    ],
+    [
+     "O",
+     "O",
+     "X",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "X"
+    ],
+    [
+     " ",
+     "O",
+     "X",
+     "X",
+     " "
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.0219,
+    "alpha_beta_cutoffs_this_turn": 41,
+    "num_static_evals_this_turn": 185,
+    "zobrist_table_num_entries_this_turn": 244,
+    "zobrist_table_num_hits_this_turn": 67
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Evil Bob",
+   "move": [
+    3,
+    0
+   ],
+   "utterance": "GRRR WAAAAH? RAAAH... GRRR!",
+   "board": [
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     " "
+    ],
+    [
+     "O",
+     "O",
+     "X",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "X"
+    ],
+    [
+     "O",
+     "O",
+     "X",
+     "X",
+     " "
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.035,
+    "alpha_beta_cutoffs_this_turn": 41,
+    "num_static_evals_this_turn": 192,
+    "zobrist_table_num_entries_this_turn": 255,
+    "zobrist_table_num_hits_this_turn": 89
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Kevin",
+   "move": [
+    3,
+    4
+   ],
+   "utterance": "Hana, dul Po ka? Si or no? No rush, Big Boss bello!",
+   "board": [
+    [
+     " ",
+     " ",
+     "X",
+     " ",
+     " "
+    ],
+    [
+     "O",
+     "O",
+     "X",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "X"
+    ],
+    [
+     "O",
+     "O",
+     "X",
+     "X",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.019,
+    "alpha_beta_cutoffs_this_turn": 32,
+    "num_static_evals_this_turn": 127,
+    "zobrist_table_num_entries_this_turn": 178,
+    "zobrist_table_num_hits_this_turn": 69
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Evil Bob",
+   "move": [
+    0,
+    1
+   ],
+   "utterance": "GRRR NYA? GRRR? RAAAH... GRRR!",
+   "board": [
+    [
+     " ",
+     "O",
+     "X",
+     " ",
+     " "
+    ],
+    [
+     "O",
+     "O",
+     "X",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "X"
+    ],
+    [
+     "O",
+     "O",
+     "X",
+     "X",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.0281,
+    "alpha_beta_cutoffs_this_turn": 31,
+    "num_static_evals_this_turn": 129,
+    "zobrist_table_num_entries_this_turn": 181,
+    "zobrist_table_num_hits_this_turn": 81
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Kevin",
+   "move": [
+    4,
+    4
+   ],
+   "utterance": "Boss, po ka Hana, dul... Hmm... po ka? papoy!",
+   "board": [
+    [
+     " ",
+     "O",
+     "X",
+     " ",
+     " "
+    ],
+    [
+     "O",
+     "O",
+     "X",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "X"
+    ],
+    [
+     "O",
+     "O",
+     "X",
+     "X",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X"
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.0157,
+    "alpha_beta_cutoffs_this_turn": 24,
+    "num_static_evals_this_turn": 79,
+    "zobrist_table_num_entries_this_turn": 118,
+    "zobrist_table_num_hits_this_turn": 44
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Evil Bob",
+   "move": [
+    5,
+    3
+   ],
+   "utterance": "NYAHAHA NYA? GRRR? NOTHING! BANANAAAA!",
+   "board": [
+    [
+     " ",
+     "O",
+     "X",
+     " ",
+     " "
+    ],
+    [
+     "O",
+     "O",
+     "X",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "X"
+    ],
+    [
+     "O",
+     "O",
+     "X",
+     "X",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X"
+    ],
+    [
+     " ",
+     " ",
+     "O",
+     "O",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.0145,
+    "alpha_beta_cutoffs_this_turn": 21,
+    "num_static_evals_this_turn": 65,
+    "zobrist_table_num_entries_this_turn": 102,
+    "zobrist_table_num_hits_this_turn": 44
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Kevin",
+   "move": [
+    5,
+    1
+   ],
+   "utterance": "Bello, Big Boss Hmm... bello? Hmm... po ka? tank yu!",
+   "board": [
+    [
+     " ",
+     "O",
+     "X",
+     " ",
+     " "
+    ],
+    [
+     "O",
+     "O",
+     "X",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "X"
+    ],
+    [
+     "O",
+     "O",
+     "X",
+     "X",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X"
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "O",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.0076,
+    "alpha_beta_cutoffs_this_turn": 14,
+    "num_static_evals_this_turn": 37,
+    "zobrist_table_num_entries_this_turn": 62,
+    "zobrist_table_num_hits_this_turn": 31
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Evil Bob",
+   "move": [
+    0,
+    3
+   ],
+   "utterance": "BANANAAAA WAAAAH? WAAAAH... BORED. WAAAAH!",
+   "board": [
+    [
+     " ",
+     "O",
+     "X",
+     "O",
+     " "
+    ],
+    [
+     "O",
+     "O",
+     "X",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "X"
+    ],
+    [
+     "O",
+     "O",
+     "X",
+     "X",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X"
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "O",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.0079,
+    "alpha_beta_cutoffs_this_turn": 10,
+    "num_static_evals_this_turn": 27,
+    "zobrist_table_num_entries_this_turn": 48,
+    "zobrist_table_num_hits_this_turn": 26
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Kevin",
+   "move": [
+    0,
+    0
+   ],
+   "utterance": "Bello, bello Po ka? Si or no? Watcha tu... wait tank yu!",
+   "board": [
+    [
+     "X",
+     "O",
+     "X",
+     "O",
+     " "
+    ],
+    [
+     "O",
+     "O",
+     "X",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "X"
+    ],
+    [
+     "O",
+     "O",
+     "X",
+     "X",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X"
+    ],
+    [
+     " ",
+     "X",
+     "O",
+     "O",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.0042,
+    "alpha_beta_cutoffs_this_turn": 8,
+    "num_static_evals_this_turn": 24,
+    "zobrist_table_num_entries_this_turn": 43,
+    "zobrist_table_num_hits_this_turn": 18
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Evil Bob",
+   "move": [
+    5,
+    0
+   ],
+   "utterance": "HEEHEE NYA? GRRR? NOTHING! NYAHAHA!",
+   "board": [
+    [
+     "X",
+     "O",
+     "X",
+     "O",
+     " "
+    ],
+    [
+     "O",
+     "O",
+     "X",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "X"
+    ],
+    [
+     "O",
+     "O",
+     "X",
+     "X",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "O",
+     "O",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.0036,
+    "alpha_beta_cutoffs_this_turn": 5,
+    "num_static_evals_this_turn": 10,
+    "zobrist_table_num_entries_this_turn": 23,
+    "zobrist_table_num_hits_this_turn": 13
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Kevin",
+   "move": [
+    0,
+    4
+   ],
+   "utterance": "Komay, buddies Po ka? Si or no? Watcha tu... wait bello!",
+   "board": [
+    [
+     "X",
+     "O",
+     "X",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "O",
+     "X",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "X"
+    ],
+    [
+     "O",
+     "O",
+     "X",
+     "X",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "O",
+     "O",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.0017,
+    "alpha_beta_cutoffs_this_turn": 2,
+    "num_static_evals_this_turn": 6,
+    "zobrist_table_num_entries_this_turn": 13,
+    "zobrist_table_num_hits_this_turn": 8
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Evil Bob",
+   "move": [
+    5,
+    4
+   ],
+   "utterance": "GRRR HEEHEE? WAAAAH! CHOMP!",
+   "board": [
+    [
+     "X",
+     "O",
+     "X",
+     "O",
+     "X"
+    ],
+    [
+     "O",
+     "O",
+     "X",
+     "O",
+     "O"
+    ],
+    [
+     "X",
+     "X",
+     "O",
+     "X",
+     "X"
+    ],
+    [
+     "O",
+     "O",
+     "X",
+     "X",
+     "X"
+    ],
+    [
+     "X",
+     "O",
+     "O",
+     "X",
+     "X"
+    ],
+    [
+     "O",
+     "X",
+     "O",
+     "O",
+     "O"
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.002,
+    "alpha_beta_cutoffs_this_turn": 0,
+    "num_static_evals_this_turn": 3,
+    "zobrist_table_num_entries_this_turn": 6,
+    "zobrist_table_num_hits_this_turn": 4
+   }
+  },
+  {
+   "type": "result",
+   "text": "Game Over; it's a draw",
+   "winner": null
+  }
+ ]
+}

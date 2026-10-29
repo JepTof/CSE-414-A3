@@ -1,0 +1,492 @@
+{
+ "format": "kiar-transcript/1",
+ "round": 1,
+ "game": {
+  "long_name": "Random-sized K-in-a-Row",
+  "short_name": "Random",
+  "k": 3,
+  "n": 3,
+  "m": 10,
+  "turn_limit": 30,
+  "initial_board": [
+   [
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " "
+   ],
+   [
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " "
+   ],
+   [
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    " "
+   ]
+  ],
+  "first_move": "X"
+ },
+ "players": {
+  "X": {
+   "nickname": "Stuart",
+   "long_name": "Stuart the minion",
+   "persona": "bland",
+   "voice_info": {
+    "Chrome": 10,
+    "Firefox": 2,
+    "other": 0
+   }
+  },
+  "O": {
+   "nickname": "Evil Bob",
+   "long_name": "Evil Bob the minion II",
+   "persona": "bland",
+   "voice_info": {
+    "Chrome": 10,
+    "Firefox": 2,
+    "other": 0
+   }
+  }
+ },
+ "events": [
+  {
+   "type": "intro",
+   "side": "X",
+   "nickname": "Stuart",
+   "text": "My name is Gru and today my minion, Stuart, will beat you.\nAnd then I, Mahika (mahika13), and Jeppe (jeppet) will take over the world!!!\n"
+  },
+  {
+   "type": "intro",
+   "side": "O",
+   "nickname": "Evil Bob",
+   "text": "My name is Dru and today my minion, Evil Bob, will beat you.\nI am Gru's evil twin!\n"
+  },
+  {
+   "type": "gm",
+   "text": "We're playing Random-sized K-in-a-Row."
+  },
+  {
+   "type": "gm",
+   "text": "Let's Play!"
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Stuart",
+   "move": [
+    0,
+    4
+   ],
+   "utterance": "Bapple Bello, bella! Banana? Later. po ka?",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.3323,
+    "alpha_beta_cutoffs_this_turn": 113,
+    "num_static_evals_this_turn": 1095,
+    "zobrist_table_num_entries_this_turn": 1244,
+    "zobrist_table_num_hits_this_turn": 191
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Evil Bob",
+   "move": [
+    0,
+    5
+   ],
+   "utterance": "BANANAAAA NYA! FIGHT! RAAAH... GRRR!",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.2249,
+    "alpha_beta_cutoffs_this_turn": 100,
+    "num_static_evals_this_turn": 1399,
+    "zobrist_table_num_entries_this_turn": 1569,
+    "zobrist_table_num_hits_this_turn": 635
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Stuart",
+   "move": [
+    1,
+    4
+   ],
+   "utterance": "Bello, bello Bello, bella! Banana? Po ka? gelato.",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.1493,
+    "alpha_beta_cutoffs_this_turn": 124,
+    "num_static_evals_this_turn": 1048,
+    "zobrist_table_num_entries_this_turn": 1223,
+    "zobrist_table_num_hits_this_turn": 459
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Evil Bob",
+   "move": [
+    2,
+    4
+   ],
+   "utterance": "GRRR NYAHAHA... WAAAAH! SMASH! CHOMP!",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.1063,
+    "alpha_beta_cutoffs_this_turn": 75,
+    "num_static_evals_this_turn": 204,
+    "zobrist_table_num_entries_this_turn": 287,
+    "zobrist_table_num_hits_this_turn": 108
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Stuart",
+   "move": [
+    1,
+    5
+   ],
+   "utterance": "Kanpai Poopaye, amigos! Heh... sneaky! amigos.",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     "X",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.0756,
+    "alpha_beta_cutoffs_this_turn": 75,
+    "num_static_evals_this_turn": 611,
+    "zobrist_table_num_entries_this_turn": 722,
+    "zobrist_table_num_hits_this_turn": 340
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Evil Bob",
+   "move": [
+    1,
+    3
+   ],
+   "utterance": "NYA NYAHAHA... WAAAAH! RAAAH! HEEHEE!",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "X",
+     "X",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.0881,
+    "alpha_beta_cutoffs_this_turn": 70,
+    "num_static_evals_this_turn": 121,
+    "zobrist_table_num_entries_this_turn": 196,
+    "zobrist_table_num_hits_this_turn": 100
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "Stuart",
+   "move": [
+    1,
+    6
+   ],
+   "utterance": "Poppadom? Bello, bella! Poopaye, amigos! heh!",
+   "board": [
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     "X",
+     "O",
+     " ",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     "O",
+     "X",
+     "X",
+     "X",
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " ",
+     " ",
+     "O",
+     " ",
+     " ",
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.0155,
+    "alpha_beta_cutoffs_this_turn": 44,
+    "num_static_evals_this_turn": 93,
+    "zobrist_table_num_entries_this_turn": 141,
+    "zobrist_table_num_hits_this_turn": 72
+   }
+  },
+  {
+   "type": "result",
+   "text": "Win for X at [1][5] in direction (0, 1)",
+   "winner": "X"
+  }
+ ]
+}
