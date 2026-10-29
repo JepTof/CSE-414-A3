@@ -24,6 +24,7 @@ import time # You'll probably need this to avoid losing a
 EXACT = 0
 LOWERBOUND = 1
 UPPERBOUND = 2
+MAX_TACTICAL_EXTENSION_PLIES = 2
 
 # Create your own type of agent by subclassing KAgent:
 
@@ -262,7 +263,7 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
         if threats[whose_move]:
             return 900_000 if whose_move == 'X' else -900_000
         if len(threats[opponent]) > 1:
-            return -850_000 if opponent == 'X' else 850_000
+            return 850_000 if opponent == 'X' else -850_000
 
         score = tracker['score']
         if threats[opponent]:
@@ -325,7 +326,8 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
             alpha=None,
             beta=None,
             special_static_eval_fn=None,
-            _tracker=None):
+            _tracker=None,
+            _extension_remaining=MAX_TACTICAL_EXTENSION_PLIES):
         if _tracker is None:
             state = State(old=state)
             game_type = self.current_game_type
@@ -348,7 +350,7 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
             if cell == ' '
         ]
         preferred_move = None
-        if self._transposition_table is not None:
+        if self._transposition_table is not None and depth_remaining > 0:
             state_hash = _tracker['hash']
             if state.whose_move == 'O':
                 state_hash ^= self._zobrist_turn_key
@@ -377,7 +379,17 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
                             cached_state.change_turn()
                         return [entry['score'], entry['best_move'], cached_state]
 
-        if depth_remaining <= 0 or terminal or not legal_moves:
+        extension_moves = None
+        extension_node = False
+        if (depth_remaining <= 0 and not terminal and legal_moves
+                and _extension_remaining > 0):
+            extension_moves = self._tactical_extension_moves(
+                legal_moves, _tracker, state.whose_move
+            )
+            extension_node = bool(extension_moves)
+
+        if ((depth_remaining <= 0 or terminal or not legal_moves)
+                and not extension_node):
             if not legal_moves and not terminal and special_static_eval_fn is None:
                 value = 0
             elif special_static_eval_fn is not None:
@@ -386,10 +398,11 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
                 value = self.static_eval(state, tracker=_tracker)
             if self.num_static_evals_this_turn >= 0:
                 self.num_static_evals_this_turn += 1
-            self._store_transposition_entry(
-                state, _tracker, depth_remaining, value,
-                original_alpha, original_beta, None,
-            )
+            if depth_remaining > 0:
+                self._store_transposition_entry(
+                    state, _tracker, depth_remaining, value,
+                    original_alpha, original_beta, None,
+                )
             return [value, None, State(old=state)]
 
         is_max = state.whose_move == 'X'
@@ -398,7 +411,9 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
         best_state = None
         player = state.whose_move
 
-        if (self.playing_mode != KAgent.AUTOGRADER
+        if extension_node:
+            ordered_moves = extension_moves
+        elif (self.playing_mode != KAgent.AUTOGRADER
                 and (self._transposition_table is not None or self.twin)):
             ordered_moves = self._order_moves(
                 legal_moves, _tracker, player, preferred_move
@@ -414,12 +429,16 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
             successor_state = State(old=state)
             result = self.minimax(
                 state,
-                depth_remaining - 1,
+                0 if extension_node else depth_remaining - 1,
                 pruning=pruning,
                 alpha=alpha,
                 beta=beta,
                 special_static_eval_fn=special_static_eval_fn,
                 _tracker=_tracker,
+                _extension_remaining=(
+                    _extension_remaining - 1
+                    if extension_node else _extension_remaining
+                ),
             )
             state.change_turn()
             self._update_tracked_move(_tracker, row, column, ' ')
@@ -439,11 +458,26 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
                     self.alpha_beta_cutoffs_this_turn += 1
                 break
 
-        self._store_transposition_entry(
-            state, _tracker, depth_remaining, best_value,
-            original_alpha, original_beta, best_move,
-        )
+        if depth_remaining > 0:
+            self._store_transposition_entry(
+                state, _tracker, depth_remaining, best_value,
+                original_alpha, original_beta, best_move,
+            )
         return [best_value, best_move, best_state or State(old=state)]
+
+    @staticmethod
+    def _tactical_extension_moves(legal_moves, tracker, player):
+        winning_squares = tracker['threats'][player]
+        if winning_squares:
+            return [move for move in legal_moves if move in winning_squares]
+
+        opponent = 'O' if player == 'X' else 'X'
+        opponent_winning_squares = tracker['threats'][opponent]
+        if len(opponent_winning_squares) == 1:
+            blocking_square = next(iter(opponent_winning_squares))
+            if blocking_square in legal_moves:
+                return [blocking_square]
+        return []
 
     def _order_moves(self, legal_moves, tracker, player, preferred_move):
         opponent = 'O' if player == 'X' else 'X'
