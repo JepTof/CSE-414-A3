@@ -12,6 +12,7 @@ TO PROVIDE A GOOD STRUCTURE FOR YOUR IMPLEMENTATION.
 
 from agent_base import KAgent
 from game_types import State, Game_Type
+from minionese_bot import MinioneseBot
 import random
 
 AUTHORS = 'Mahika Bagri and Jeppe Tofft' 
@@ -37,6 +38,7 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
         self.nickname = minion_names[index]
         if twin:
             self.nickname = 'Evil ' + self.nickname
+        self.minionese_bot = MinioneseBot()
         self.long_name = self.nickname + ' the minion'
         if twin: self.long_name += ' II'
         self.persona = 'bland'
@@ -443,7 +445,19 @@ class OurAgent(KAgent):  # Keep the class name "OurAgent" so a game master
                     break
         finally:
             self._search_deadline = None
-        new_remark = "I considered the available lines before choosing this move."
+        position_score = self.static_eval(new_state)
+        minion_score = (
+            position_score if self.playing == 'X' else -position_score
+        )
+        new_remark = self.minionese_bot.make_utterance(
+            self.nickname,
+            current_state,
+            new_state,
+            move,
+            self.playing,
+            self.current_game_type.k,
+            minion_score,
+        )
 
         if self.playing_mode == KAgent.AUTOGRADER:
             stats = {
