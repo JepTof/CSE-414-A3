@@ -65,6 +65,7 @@ def play_one_game(game_type, twin_plays_x):
     regular = agent_module.OurAgent(twin=False)
     player_x, player_o = (twin, regular) if twin_plays_x else (regular, twin)
 
+    game_master.ENABLE_VOICE = False
     result = ResultRecorder()
     game_master.set_game(game_type)
     game_master.set_players(player_x, player_o)
