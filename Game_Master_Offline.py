@@ -260,11 +260,12 @@ def test():
     
 
     import mahika13jeppet_KInARow as h_ours
+    import wlarow_KInARow as h_others
     if random.choice((True, False)):
         px = h_ours.OurAgent()
-        po = h_ours.OurAgent(twin=True)
+        po = h_others.OurAgent()
     else:
-        px = h_ours.OurAgent(twin=True)
+        px = h_others.OurAgent()
         po = h_ours.OurAgent()
     set_players(px, po)
     print(f"X: {px.nickname}; O: {po.nickname}")

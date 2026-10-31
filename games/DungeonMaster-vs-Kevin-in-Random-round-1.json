@@ -1,0 +1,444 @@
+{
+ "format": "kiar-transcript/1",
+ "round": 1,
+ "game": {
+  "long_name": "Random-sized K-in-a-Row",
+  "short_name": "Random",
+  "k": 3,
+  "n": 6,
+  "m": 3,
+  "turn_limit": 18,
+  "initial_board": [
+   [
+    " ",
+    " ",
+    " "
+   ],
+   [
+    " ",
+    " ",
+    " "
+   ],
+   [
+    " ",
+    " ",
+    " "
+   ],
+   [
+    " ",
+    " ",
+    " "
+   ],
+   [
+    " ",
+    " ",
+    " "
+   ],
+   [
+    " ",
+    " ",
+    " "
+   ]
+  ],
+  "first_move": "X"
+ },
+ "players": {
+  "X": {
+   "nickname": "DungeonMaster",
+   "long_name": "KeeperOfTheEternalBoard",
+   "persona": "fantasy_storyteller",
+   "voice_info": {
+    "Chrome": 10,
+    "Firefox": 2,
+    "other": 0
+   }
+  },
+  "O": {
+   "nickname": "Kevin",
+   "long_name": "Kevin the minion",
+   "persona": "bland",
+   "voice_info": {
+    "Chrome": 10,
+    "Firefox": 2,
+    "other": 0
+   }
+  }
+ },
+ "events": [
+  {
+   "type": "intro",
+   "side": "X",
+   "nickname": "DungeonMaster",
+   "text": "Greetings, adventurer!\nI am the Dungeon Master of the Board Realms.\nEvery stone becomes a battle. Every line becomes destiny.\nCritical victories, desperate saving throws, and legendary quests\nshall be woven into the tale of this campaign.\nROLL INITIATIVE! -- Will LaRow - wlarow"
+  },
+  {
+   "type": "intro",
+   "side": "O",
+   "nickname": "Kevin",
+   "text": "My name is Gru and today my minion, Kevin, will beat you.\nAnd then I, Mahika (mahika13), and Jeppe (jeppet) will take over the world!!!\n"
+  },
+  {
+   "type": "gm",
+   "text": "We're playing Random-sized K-in-a-Row."
+  },
+  {
+   "type": "gm",
+   "text": "Let's Play!"
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "DungeonMaster",
+   "move": [
+    3,
+    1
+   ],
+   "utterance": "A ruined shrine stands forgotten beside the trail. You uncover a legendary relic long thought lost. Quest Turn 1. Move chosen: (3, 1). Score: 1000240.",
+   "board": [
+    [
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.016,
+    "alpha_beta_cutoffs_this_turn": 9,
+    "num_static_evals_this_turn": 93,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Kevin",
+   "move": [
+    2,
+    1
+   ],
+   "utterance": "Komay, buddies Ai-ai-ai! Watcha tu... wait sae!",
+   "board": [
+    [
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.0388,
+    "alpha_beta_cutoffs_this_turn": 412,
+    "num_static_evals_this_turn": 445,
+    "zobrist_table_num_entries_this_turn": 74,
+    "zobrist_table_num_hits_this_turn": 19
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "DungeonMaster",
+   "move": [
+    4,
+    1
+   ],
+   "utterance": "Fresh tracks suggest travelers passed recently. A powerful ally joins your cause. Quest Turn 2. Move chosen: (4, 1). Score: 1000310.",
+   "board": [
+    [
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.108,
+    "alpha_beta_cutoffs_this_turn": 80,
+    "num_static_evals_this_turn": 592,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Kevin",
+   "move": [
+    5,
+    1
+   ],
+   "utterance": "Hana, dul Bee do, bee do! Bee do! Not today! po ka?!",
+   "board": [
+    [
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.008,
+    "alpha_beta_cutoffs_this_turn": 74,
+    "num_static_evals_this_turn": 83,
+    "zobrist_table_num_entries_this_turn": 61,
+    "zobrist_table_num_hits_this_turn": 17
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "DungeonMaster",
+   "move": [
+    4,
+    2
+   ],
+   "utterance": "A raven watches from a dead branch overhead. Perception check: natural 20. A hidden vault is revealed. Two paths to victory open before the party. Quest Turn 3. Move chosen: (4, 2). Score: 100000000.",
+   "board": [
+    [
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     "X"
+    ],
+    [
+     " ",
+     "O",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.0921,
+    "alpha_beta_cutoffs_this_turn": 17,
+    "num_static_evals_this_turn": 791,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "move",
+   "side": "O",
+   "nickname": "Kevin",
+   "move": [
+    4,
+    0
+   ],
+   "utterance": "Hana, dul, sae Bee do, bee do! Ai-ai-ai! Papoy! sae!",
+   "board": [
+    [
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     "O",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " "
+    ],
+    [
+     "O",
+     "X",
+     "X"
+    ],
+    [
+     " ",
+     "O",
+     " "
+    ]
+   ],
+   "whose_move": "X",
+   "stats": {
+    "seconds": 0.0062,
+    "alpha_beta_cutoffs_this_turn": 53,
+    "num_static_evals_this_turn": 66,
+    "zobrist_table_num_entries_this_turn": 53,
+    "zobrist_table_num_hits_this_turn": 15
+   }
+  },
+  {
+   "type": "move",
+   "side": "X",
+   "nickname": "DungeonMaster",
+   "move": [
+    2,
+    0
+   ],
+   "utterance": "You make camp beneath ancient pines. An ancient prophecy suddenly makes sense. Your strategy places the foe in a difficult position. Quest Turn 4. Move chosen: (2, 0). Score: 100000000.",
+   "board": [
+    [
+     " ",
+     " ",
+     " "
+    ],
+    [
+     " ",
+     " ",
+     " "
+    ],
+    [
+     "X",
+     "O",
+     " "
+    ],
+    [
+     " ",
+     "X",
+     " "
+    ],
+    [
+     "O",
+     "X",
+     "X"
+    ],
+    [
+     " ",
+     "O",
+     " "
+    ]
+   ],
+   "whose_move": "O",
+   "stats": {
+    "seconds": 0.0672,
+    "alpha_beta_cutoffs_this_turn": 17,
+    "num_static_evals_this_turn": 482,
+    "zobrist_table_num_entries_this_turn": 0,
+    "zobrist_table_num_hits_this_turn": 0
+   }
+  },
+  {
+   "type": "result",
+   "text": "Win for X at [2][0] in direction (1, 1)",
+   "winner": "X"
+  }
+ ]
+}
