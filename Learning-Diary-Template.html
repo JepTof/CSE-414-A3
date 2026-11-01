@@ -204,8 +204,17 @@ of how minimax works in textbooks are not sufficient.
     Blank squares in row-major order: (1,1), (1,2), (2,0), (2,1).
     Expected best move: (1,2).  Plain-minimax leaf count: 12.
   </pre>
-  <font color="blue">Write your response here.  For 4d, you may include a hand-drawn
-scan, an ASCII diagram, or a clearly formatted text tree.</font>
+  <font color="blue">
+    Write your response here. For 4d, you may include a hand-drawn
+    scan, an ASCII diagram, or a clearly formatted text tree.
+    4a. The cutoffs happen in the minimax function.
+    4b. TODO!
+    4c. It is the idea is to not consider options that won't affect 
+    the outcome. Alpha represents the minimal value the minimizing 
+    player can be sure of in a specific state. Beta represents the largest
+    value the maximizing player can be sure of at that specific state.
+    Alpha is initially minus infinity and beta is infinity. 
+  </font>
   </font></td></tr>
 
   <!-- ============================================================ -->
